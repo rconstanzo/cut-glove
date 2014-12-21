@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 358.0, 45.0, 1104.0, 964.0 ],
+		"rect" : [ 354.0, 45.0, 1104.0, 964.0 ],
 		"bgcolor" : [ 0.159647, 0.150039, 0.159879, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -1227,7 +1227,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 308.0, 198.513153, 299.0, 22.0 ],
 									"style" : "",
 									"text" : "combo nothing right down+right down down+right right"
@@ -1257,7 +1257,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 121.0, 151.266998, 63.0, 22.0 ],
-									"presentation_rect" : [ 894.0, 424.753845, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "r xbox360"
 								}
@@ -1269,7 +1268,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
+									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 121.0, 198.513153, 168.0, 22.0 ],
 									"style" : "",
 									"text" : "combo down down+right right"
@@ -1283,7 +1282,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 849.895508, 158.753845, 88.0, 20.0 ],
-									"presentation_rect" : [ 691.0, 105.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "from gamepad"
 								}
@@ -1300,7 +1298,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 778.895508, 193.630768, 68.0, 22.0 ],
-									"presentation_rect" : [ 620.0, 139.876923, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "route dpad"
 								}
@@ -1317,7 +1314,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 778.895508, 157.753845, 63.0, 22.0 ],
-									"presentation_rect" : [ 620.0, 104.0, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "r xbox360"
 								}
@@ -1570,7 +1566,6 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 778.895508, 356.894257, 62.0, 22.0 ],
-									"presentation_rect" : [ 756.0, 186.624619, 0.0, 0.0 ],
 									"style" : "",
 									"text" : "zl change"
 								}
@@ -18751,7 +18746,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1002.0, 294.0, 587.0, 647.0 ],
+						"rect" : [ 38.0, 276.0, 876.0, 645.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -18971,9 +18966,9 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 364.0, 379.528015, 133.0, 20.0 ],
+									"patching_rect" : [ 494.0, 379.528015, 240.0, 20.0 ],
 									"style" : "",
-									"text" : "exclude actual fx on/off"
+									"text" : "exclude actual fx on/off and record/overdub"
 								}
 
 							}
@@ -18984,12 +18979,12 @@
 									"fontsize" : 12.0,
 									"id" : "obj-10",
 									"maxclass" : "newobj",
-									"numinlets" : 6,
-									"numoutlets" : 6,
-									"outlettype" : [ "", "", "", "", "", "" ],
-									"patching_rect" : [ 151.0, 379.528015, 204.0, 22.0 ],
+									"numinlets" : 8,
+									"numoutlets" : 8,
+									"outlettype" : [ "", "", "", "", "", "", "", "" ],
+									"patching_rect" : [ 151.0, 379.528015, 337.0, 22.0 ],
 									"style" : "",
-									"text" : "route stutter pitch lofi pitchpreset dirt"
+									"text" : "route stutter pitch lofi pitchpreset stutteroverdub stutterrec dirt"
 								}
 
 							}
@@ -19163,8 +19158,8 @@
 									"destination" : [ "obj-28", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 345.5, 519.833252, 160.5, 519.833252 ],
-									"source" : [ "obj-10", 5 ]
+									"midpoints" : [ 478.5, 519.833252, 160.5, 519.833252 ],
+									"source" : [ "obj-10", 7 ]
 								}
 
 							}
@@ -39048,7 +39043,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 273.0, 125.0, 42.0, 19.0 ],
 									"style" : "",
-									"text" : "7%",
+									"text" : "4%",
 									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 
@@ -40753,10 +40748,10 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 623.0, 420.83255, 193.0, 59.334927 ],
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 623.0, 449.83255, 192.0, 35.334927 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 287.0, 330.665039, 193.0, 62.334927 ],
+					"presentation_rect" : [ 287.0, 322.0, 193.0, 35.334927 ],
 					"varname" : "presets",
 					"viewvisibility" : 1
 				}
@@ -42037,7 +42032,7 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-36::obj-7" : [ "live.grid[1]", "live.grid", 0 ],
+			"obj-36::obj-8" : [ "randomize", "live.text", 0 ],
 			"obj-67::obj-35" : [ "[5]", "Level", 0 ],
 			"obj-15::obj-6" : [ "live.text", "live.text", 0 ],
 			"obj-67::obj-21::obj-6" : [ "live.tab[3]", "live.tab[1]", 0 ],
@@ -42109,6 +42104,20 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "lofi~.maxpat",
+				"bootpath" : "~/Dropbox/Patches/The Party Van",
+				"patcherrelativepath" : "../The Party Van",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "fftmp3.maxpat",
+				"bootpath" : "~/Dropbox/Patches/The Party Van",
+				"patcherrelativepath" : "../The Party Van",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "dirt~.maxpat",
 				"bootpath" : "~/Dropbox/Patches/Cut Glove",
 				"patcherrelativepath" : ".",
@@ -42124,6 +42133,20 @@
 			}
 , 			{
 				"name" : "presets.maxpat",
+				"bootpath" : "~/Dropbox/Patches/Cut Glove",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "combo.maxpat",
+				"bootpath" : "~/Dropbox/Patches/Cut Glove",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pressHold.maxpat",
 				"bootpath" : "~/Dropbox/Patches/Cut Glove",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
@@ -42207,13 +42230,6 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "pressHold.maxpat",
-				"bootpath" : "~/Dropbox/Patches/Cut Glove",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "CProcess_Speed.maxpat",
 				"bootpath" : "~/Dropbox/Patches/Cut Glove",
 				"patcherrelativepath" : ".",
@@ -42291,18 +42307,23 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "combo.maxpat",
-				"bootpath" : "~/Dropbox/Patches/Cut Glove",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "sigmund~.mxo",
 				"type" : "iLaX"
 			}
 , 			{
 				"name" : "dynamicdsp~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "framerank~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "dynamic.out~.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "dynamic.in~.mxo",
 				"type" : "iLaX"
 			}
 , 			{

@@ -44,7 +44,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 962.854919, 377.0, 246.0, 47.0 ],
-					"presentation_rect" : [ 964.135254, 379.0, 0.0, 0.0 ],
 					"style" : "",
 					"text" : "up/down = gain\nleft/right = left = bassy, right = bright\nspeed = choke"
 				}
@@ -858,6 +857,25 @@
 								}
 
 							}
+ ],
+						"styles" : [ 							{
+								"name" : "AudioStatus_Menu",
+								"default" : 								{
+									"bgfillcolor" : 									{
+										"type" : "color",
+										"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+										"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+										"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+										"angle" : 270.0,
+										"proportion" : 0.39,
+										"autogradient" : 0
+									}
+
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
  ]
 					}
 ,
@@ -1091,9 +1109,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 488.36615, 605.812744, 83.0, 20.0 ],
+					"patching_rect" : [ 451.409058, 607.812744, 222.0, 20.0 ],
 					"style" : "",
-					"text" : "for MIDI learn"
+					"text" : "for preset randomization and MIDI learn"
 				}
 
 			}
@@ -1106,7 +1124,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 409.198425, 578.678223, 77.0, 22.0 ],
+					"patching_rect" : [ 373.698425, 576.678223, 77.0, 22.0 ],
 					"style" : "",
 					"text" : "r thispatcher"
 				}
@@ -1121,7 +1139,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 409.198425, 605.812744, 69.0, 22.0 ],
+					"patching_rect" : [ 373.698425, 607.812744, 69.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"style" : "",
 					"text" : "thispatcher"
@@ -1137,7 +1155,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 335.999969, 605.812744, 50.0, 22.0 ],
+					"patching_rect" : [ 300.499969, 607.812744, 50.0, 22.0 ],
 					"style" : "",
 					"text" : "s hover"
 				}
@@ -1152,7 +1170,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 4,
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 335.999969, 578.678223, 59.5, 22.0 ],
+					"patching_rect" : [ 300.499969, 576.678223, 59.5, 22.0 ],
 					"saved_object_attributes" : 					{
 						"mode" : 0
 					}
@@ -1212,44 +1230,14 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
-					"id" : "obj-7",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 416.33194, 526.73291, 140.0, 20.0 ],
-					"style" : "",
-					"text" : "for preset randomization"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
 					"id" : "obj-8",
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 335.999969, 492.73291, 114.0, 22.0 ],
+					"patching_rect" : [ 459.499969, 576.678223, 114.0, 22.0 ],
 					"style" : "",
 					"text" : "r preset_randomize"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-14",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 335.999969, 526.73291, 69.0, 22.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
-					"style" : "",
-					"text" : "thispatcher"
 				}
 
 			}
@@ -1294,7 +1282,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u403007300"
+					"varname" : "u224009431"
 				}
 
 			}
@@ -20778,9 +20766,10 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
+					"destination" : [ "obj-41", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
+					"midpoints" : [ 468.999969, 602.745483, 383.198425, 602.745483 ],
 					"source" : [ "obj-8", 0 ]
 				}
 

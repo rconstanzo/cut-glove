@@ -126,7 +126,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 104.0, 746.0, 389.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -160,7 +160,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 399.0, 303.947449, 325.0, 22.0 ],
+									"patching_rect" : [ 387.0, 253.947449, 325.0, 22.0 ],
 									"style" : "",
 									"text" : "script sendbox xbox_display replace xbox_display6.maxpat"
 								}
@@ -173,7 +173,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 303.947449, 325.0, 22.0 ],
+									"patching_rect" : [ 38.0, 253.947449, 325.0, 22.0 ],
 									"style" : "",
 									"text" : "script sendbox xbox_display replace xbox_display7.maxpat"
 								}
@@ -188,7 +188,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 50.0, 263.157959, 36.0, 22.0 ],
+									"patching_rect" : [ 38.0, 213.157959, 36.0, 22.0 ],
 									"style" : "",
 									"text" : "sel 7"
 								}
@@ -203,7 +203,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
-									"patching_rect" : [ 50.0, 222.368469, 37.0, 22.0 ],
+									"patching_rect" : [ 38.0, 172.368469, 37.0, 22.0 ],
 									"style" : "",
 									"text" : "/ 100"
 								}
@@ -218,7 +218,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 181.57901, 65.0, 22.0 ],
+									"patching_rect" : [ 38.0, 131.57901, 65.0, 22.0 ],
 									"style" : "",
 									"text" : "round 100"
 								}
@@ -231,7 +231,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 140.78949, 63.0, 22.0 ],
+									"patching_rect" : [ 38.0, 90.78949, 63.0, 22.0 ],
 									"style" : "",
 									"text" : "sprintf %x"
 								}
@@ -244,7 +244,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.0, 100.0, 81.0, 22.0 ],
+									"patching_rect" : [ 38.0, 50.0, 81.0, 22.0 ],
 									"style" : "",
 									"text" : "r MaxVersion"
 								}
@@ -257,7 +257,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 218.5, 385.947449, 30.0, 30.0 ],
+									"patching_rect" : [ 38.0, 307.947449, 30.0, 30.0 ],
 									"style" : ""
 								}
 
@@ -295,7 +295,7 @@
 									"destination" : [ "obj-34", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 76.5, 294.052704, 408.5, 294.052704 ],
+									"midpoints" : [ 64.5, 244.052704, 396.5, 244.052704 ],
 									"source" : [ "obj-14", 1 ]
 								}
 
@@ -323,6 +323,7 @@
 									"destination" : [ "obj-36", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
+									"midpoints" : [ 396.5, 291.447449, 47.5, 291.447449 ],
 									"source" : [ "obj-34", 0 ]
 								}
 
@@ -2799,8 +2800,8 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-7" : [ "live.numbox", "live.numbox", 0 ],
-			"obj-6" : [ "live.text", "live.text", 0 ]
+			"obj-6" : [ "live.text", "live.text", 0 ],
+			"obj-7" : [ "live.numbox", "live.numbox", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -2819,13 +2820,6 @@
 			}
 , 			{
 				"name" : "deadzone.maxpat",
-				"bootpath" : "~/Dropbox/Patches/Cut Glove",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "xbox.maxpat",
 				"bootpath" : "~/Dropbox/Patches/Cut Glove",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

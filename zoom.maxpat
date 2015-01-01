@@ -185,7 +185,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 473.5, 41.0, 30.0, 30.0 ],
 					"style" : ""
 				}
@@ -231,9 +231,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 949.5, 322.29895, 209.0, 22.0 ],
+					"patching_rect" : [ 949.5, 322.29895, 216.0, 22.0 ],
 					"style" : "",
-					"text" : "patcherargs @zoom 0.2 @return 800"
+					"text" : "patcherargs @zoom 0.2 @return 1000"
 				}
 
 			}
@@ -599,7 +599,7 @@
 					"destination" : [ "obj-11", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 1149.0, 349.92395, 959.0, 349.92395 ],
+					"midpoints" : [ 1156.0, 349.92395, 959.0, 349.92395 ],
 					"source" : [ "obj-10", 1 ]
 				}
 
@@ -1147,6 +1147,8 @@
 
 			}
  ],
+		"dependency_cache" : [  ],
+		"embedsnapshot" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

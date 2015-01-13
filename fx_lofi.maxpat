@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 969.0, 429.0, 786.0, 565.0 ],
+		"rect" : [ 193.0, 265.0, 786.0, 565.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -228,7 +228,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u501014315"
+					"varname" : "u288049908"
 				}
 
 			}
@@ -1295,7 +1295,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 586.0, 300.0, 433.0, 400.0 ],
+						"rect" : [ 341.0, 307.0, 433.0, 400.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1972,6 +1972,80 @@
 												"parentstyle" : "",
 												"multi" : 0
 											}
+, 											{
+												"name" : "ksliderWhite",
+												"default" : 												{
+													"color" : [ 1.0, 1.0, 1.0, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
+, 											{
+												"name" : "newobjBlue-1",
+												"default" : 												{
+													"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
+, 											{
+												"name" : "newobjBrown-1",
+												"default" : 												{
+													"accentcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
+, 											{
+												"name" : "newobjCyan-1",
+												"default" : 												{
+													"accentcolor" : [ 0.029546, 0.773327, 0.821113, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
+, 											{
+												"name" : "newobjGreen-1",
+												"default" : 												{
+													"accentcolor" : [ 0.0, 0.533333, 0.168627, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
+, 											{
+												"name" : "newobjYellow-1",
+												"default" : 												{
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
+, 											{
+												"name" : "numberGold-1",
+												"default" : 												{
+													"accentcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
+, 											{
+												"name" : "rsliderGold",
+												"default" : 												{
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
  ]
 									}
 ,
@@ -2025,7 +2099,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 50.0, 94.0, 415.0, 301.0 ],
+										"rect" : [ 50.0, 94.0, 350.0, 276.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -2061,7 +2135,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 231.0, 53.0, 150.0, 60.0 ],
+													"patching_rect" : [ 180.0, 7.0, 150.0, 60.0 ],
 													"style" : "",
 													"text" : "depending on OS version load the mp3-ification version of the lofi module or not"
 												}
@@ -2069,31 +2143,33 @@
 											}
 , 											{
 												"box" : 												{
+													"fontface" : 0,
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
 													"id" : "obj-21",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 1,
-													"outlettype" : [ "lofi_win~" ],
-													"patching_rect" : [ 130.0, 117.272186, 64.0, 22.0 ],
+													"outlettype" : [ "process_lofi_win~" ],
+													"patching_rect" : [ 174.0, 117.272186, 113.0, 22.0 ],
 													"style" : "",
-													"text" : "t lofi_win~"
+													"text" : "t process_lofi_win~"
 												}
 
 											}
 , 											{
 												"box" : 												{
+													"fontface" : 0,
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
 													"id" : "obj-20",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
 													"numoutlets" : 1,
-													"outlettype" : [ "lofi~" ],
-													"patching_rect" : [ 73.0, 117.272186, 40.0, 22.0 ],
+													"outlettype" : [ "process_lofi~" ],
+													"patching_rect" : [ 73.0, 117.272186, 88.0, 22.0 ],
 													"style" : "",
-													"text" : "t lofi~"
+													"text" : "t process_lofi~"
 												}
 
 											}
@@ -2106,7 +2182,7 @@
 													"numinlets" : 3,
 													"numoutlets" : 3,
 													"outlettype" : [ "bang", "bang", "" ],
-													"patching_rect" : [ 73.0, 81.136093, 133.0, 22.0 ],
+													"patching_rect" : [ 73.0, 81.136093, 221.0, 22.0 ],
 													"style" : "",
 													"text" : "sel macintosh windows"
 												}
@@ -2224,6 +2300,7 @@
 													"destination" : [ "obj-9", 1 ],
 													"disabled" : 0,
 													"hidden" : 0,
+													"midpoints" : [ 183.5, 145.84024, 82.5, 145.84024 ],
 													"source" : [ "obj-21", 0 ]
 												}
 
@@ -2661,6 +2738,80 @@
 										"autogradient" : 0
 									}
 
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "ksliderWhite",
+								"default" : 								{
+									"color" : [ 1.0, 1.0, 1.0, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjBlue-1",
+								"default" : 								{
+									"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjBrown-1",
+								"default" : 								{
+									"accentcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjCyan-1",
+								"default" : 								{
+									"accentcolor" : [ 0.029546, 0.773327, 0.821113, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjGreen-1",
+								"default" : 								{
+									"accentcolor" : [ 0.0, 0.533333, 0.168627, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "newobjYellow-1",
+								"default" : 								{
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "numberGold-1",
+								"default" : 								{
+									"accentcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+								}
+,
+								"parentstyle" : "",
+								"multi" : 0
+							}
+, 							{
+								"name" : "rsliderGold",
+								"default" : 								{
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 								}
 ,
 								"parentstyle" : "",

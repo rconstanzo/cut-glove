@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 660.0, 337.0, 1007.0, 422.0 ],
+		"rect" : [ 408.0, 244.0, 1007.0, 422.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,6 +37,88 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 0.0, 0.2 ],
+					"activebgoncolor" : [ 0.662639, 0.263952, 0.677225, 1.0 ],
+					"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"activetextoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.2 ],
+					"bgoncolor" : [ 0.662639, 0.263952, 0.677225, 1.0 ],
+					"bordercolor" : [ 0.0, 0.019608, 0.078431, 0.0 ],
+					"focusbordercolor" : [ 0.0, 0.019608, 0.078431, 0.0 ],
+					"fontface" : 0,
+					"fontname" : "Helvetica",
+					"hint" : "Choses between dd-6(time) and fft(frequency) stuttering",
+					"id" : "obj-5",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 838.295776, 204.836975, 43.589996, 20.210083 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 6.953247, 32.562561, 38.924923, 20.210083 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_linknames" : 1,
+							"parameter_longname" : "stutterdd",
+							"parameter_shortname" : "live.text",
+							"parameter_type" : 2,
+							"parameter_mmax" : 1.0,
+							"parameter_enum" : [ "val1", "val2" ]
+						}
+
+					}
+,
+					"text" : "dd-6",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"texton" : "fft",
+					"varname" : "stutterdd"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.0, 0.0, 0.0, 0.2 ],
+					"activebgoncolor" : [ 0.662639, 0.263952, 0.677225, 1.0 ],
+					"activetextcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"activetextoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.2 ],
+					"bgoncolor" : [ 0.662639, 0.263952, 0.677225, 1.0 ],
+					"bordercolor" : [ 0.0, 0.019608, 0.078431, 0.0 ],
+					"focusbordercolor" : [ 0.0, 0.019608, 0.078431, 0.0 ],
+					"fontface" : 0,
+					"fontname" : "Helvetica",
+					"hint" : "Kill mode mutes thru audio during playback",
+					"id" : "obj-2",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 745.550659, 204.836975, 43.589996, 20.210083 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 83.821045, 32.562561, 39.0, 20.210083 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_linknames" : 1,
+							"parameter_longname" : "stutterkill",
+							"parameter_shortname" : "live.text",
+							"parameter_type" : 2,
+							"parameter_mmax" : 1.0,
+							"parameter_enum" : [ "val1", "val2" ]
+						}
+
+					}
+,
+					"text" : "kill",
+					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
+					"texton" : "kill",
+					"varname" : "stutterkill"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -483,9 +565,9 @@
 					"patching_rect" : [ 175.327026, 370.0, 58.0, 22.0 ],
 					"restore" : 					{
 						"stutter" : [ 0.0 ],
-						"stutterdd" : [ 0 ],
+						"stutterdd" : [ 0.0 ],
 						"stutterdensity" : [ 0.8 ],
-						"stutterkill" : [ 0 ],
+						"stutterkill" : [ 0.0 ],
 						"stutteroverdub" : [ 0.0 ],
 						"stutterrand" : [ 0.0 ],
 						"stutterrate" : [ 0.8 ],
@@ -494,7 +576,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u431020679"
+					"varname" : "u959034100"
 				}
 
 			}
@@ -1888,7 +1970,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 330.0, 90.0, 898.0, 472.0 ],
+										"rect" : [ 121.0, 251.0, 898.0, 472.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1934,7 +2016,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 550.0, 16.0, 164.0, 33.0 ],
+													"patching_rect" : [ 550.0, 16.0, 165.0, 33.0 ],
 													"style" : "",
 													"text" : "Create a spectral freeze with overdub and denoising."
 												}
@@ -2007,7 +2089,7 @@
 													"numinlets" : 1,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 181.5, 40.0, 82.0, 22.0 ],
+													"patching_rect" : [ 182.5, 40.0, 82.0, 22.0 ],
 													"style" : "",
 													"text" : "loadmess 0.1"
 												}
@@ -2562,7 +2644,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 194.0, 62.0, 57.0, 20.0 ],
+													"patching_rect" : [ 195.0, 62.0, 57.0, 20.0 ],
 													"style" : "",
 													"text" : "denoiser"
 												}
@@ -2580,7 +2662,7 @@
 													"numoutlets" : 2,
 													"outlettype" : [ "", "bang" ],
 													"parameter_enable" : 0,
-													"patching_rect" : [ 181.5, 84.0, 50.0, 22.0 ],
+													"patching_rect" : [ 182.5, 84.0, 50.0, 22.0 ],
 													"style" : ""
 												}
 
@@ -2736,6 +2818,7 @@
 											}
 , 											{
 												"box" : 												{
+													"fontface" : 0,
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
 													"id" : "obj-65",
@@ -2743,9 +2826,9 @@
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "signal" ],
-													"patching_rect" : [ 26.5, 117.0, 174.0, 22.0 ],
+													"patching_rect" : [ 26.5, 117.0, 175.0, 22.0 ],
 													"style" : "",
-													"text" : "poly~ fffreeze~ args #0"
+													"text" : "poly~ process_freeze~ args #0"
 												}
 
 											}
@@ -5467,6 +5550,80 @@
 												"parentstyle" : "",
 												"multi" : 0
 											}
+, 											{
+												"name" : "ksliderWhite",
+												"default" : 												{
+													"color" : [ 1.0, 1.0, 1.0, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
+, 											{
+												"name" : "newobjBlue-1",
+												"default" : 												{
+													"accentcolor" : [ 0.317647, 0.654902, 0.976471, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
+, 											{
+												"name" : "newobjBrown-1",
+												"default" : 												{
+													"accentcolor" : [ 0.654902, 0.572549, 0.376471, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
+, 											{
+												"name" : "newobjCyan-1",
+												"default" : 												{
+													"accentcolor" : [ 0.029546, 0.773327, 0.821113, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
+, 											{
+												"name" : "newobjGreen-1",
+												"default" : 												{
+													"accentcolor" : [ 0.0, 0.533333, 0.168627, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
+, 											{
+												"name" : "newobjYellow-1",
+												"default" : 												{
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
+, 											{
+												"name" : "numberGold-1",
+												"default" : 												{
+													"accentcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
+, 											{
+												"name" : "rsliderGold",
+												"default" : 												{
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+												}
+,
+												"parentstyle" : "",
+												"multi" : 0
+											}
  ]
 									}
 ,
@@ -7752,68 +7909,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 0.0, 0.0, 0.0, 0.2 ],
-					"bgoncolor" : [ 0.662639, 0.263952, 0.677225, 1.0 ],
-					"fontname" : "Helvetica",
-					"fontsize" : 10.0,
-					"hint" : "Kill mode mutes thru audio during playback",
-					"id" : "obj-237",
-					"legacytextcolor" : 1,
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"outputmode" : 0,
-					"parameter_enable" : 0,
-					"patching_rect" : [ 745.550659, 204.836975, 32.589996, 20.210083 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 85.072876, 32.562561, 38.924923, 20.210083 ],
-					"style" : "",
-					"text" : "kill",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"texton" : "kill",
-					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textovercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"usebgoncolor" : 1,
-					"usetextovercolor" : 1,
-					"varname" : "stutterkill"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.0, 0.0, 0.0, 0.2 ],
-					"bgoncolor" : [ 0.0, 0.0, 0.0, 0.2 ],
-					"fontname" : "Helvetica",
-					"fontsize" : 10.0,
-					"hint" : "Choses between dd-6(time) and fft(frequency) stuttering",
-					"id" : "obj-194",
-					"legacytextcolor" : 1,
-					"maxclass" : "textbutton",
-					"mode" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"outputmode" : 0,
-					"parameter_enable" : 0,
-					"patching_rect" : [ 838.295776, 204.836975, 43.589996, 20.210083 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 6.953247, 32.562561, 38.924923, 20.210083 ],
-					"style" : "",
-					"text" : "dd-6",
-					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"texton" : "fft",
-					"textoncolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"textovercolor" : [ 1.0, 1.0, 1.0, 1.0 ],
-					"usebgoncolor" : 1,
-					"usetextovercolor" : 1,
-					"varname" : "stutterdd"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Helvetica Neue Light",
 					"fontsize" : 20.0,
 					"hint" : "",
@@ -7910,16 +8005,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"destination" : [ "obj-1989", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-194", 0 ]
 				}
 
 			}
@@ -8067,17 +8152,7 @@
 , 			{
 				"patchline" : 				{
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"destination" : [ "obj-194", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-1991", 7 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
-					"destination" : [ "obj-237", 0 ],
+					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1991", 6 ]
@@ -8101,6 +8176,16 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-1991", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1991", 7 ]
 				}
 
 			}
@@ -8136,6 +8221,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"destination" : [ "obj-1988", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-19", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -8150,16 +8245,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-22", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"destination" : [ "obj-1988", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-237", 0 ]
 				}
 
 			}
@@ -8249,6 +8334,16 @@
 , 			{
 				"patchline" : 				{
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"destination" : [ "obj-1989", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"destination" : [ "obj-36", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -8281,8 +8376,10 @@
 			"obj-50" : [ "stutteroverdub", "live.text", 0 ],
 			"obj-6" : [ "stutterrate", "live.numbox", 0 ],
 			"obj-49" : [ "stutterrec", "live.text", 0 ],
+			"obj-5" : [ "stutterdd", "live.text", 0 ],
 			"obj-14" : [ "stutterdensity", "live.numbox", 0 ],
 			"obj-45" : [ "stutter", "live.text", 0 ],
+			"obj-2" : [ "stutterkill", "live.text", 0 ],
 			"obj-51" : [ "stutterrand", "live.text", 0 ]
 		}
 ,
@@ -8294,14 +8391,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "fffreeze~.maxpat",
+				"name" : "process_freeze~.maxpat",
 				"bootpath" : "~/Dropbox/Patches/Cut Glove",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "fffreeze.pfft.maxpat",
+				"name" : "process_freeze.pfft.maxpat",
 				"bootpath" : "~/Dropbox/Patches/Cut Glove",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

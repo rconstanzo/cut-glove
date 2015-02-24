@@ -435,7 +435,7 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.0, 0.0, 0.0, 0.2 ],
-					"activeslidercolor" : [ 0.0, 0.0, 0.0, 0.2 ],
+					"activeslidercolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"appearance" : 2,
 					"bordercolor" : [ 0.196078, 0.196078, 0.196078, 0.0 ],
 					"focusbordercolor" : [ 0.196078, 0.196078, 0.196078, 0.0 ],
@@ -457,7 +457,8 @@
 							"parameter_longname" : "1karma_pitch",
 							"parameter_shortname" : "live.numbox",
 							"parameter_type" : 0,
-							"parameter_mmax" : 1.0,
+							"parameter_mmin" : -8.0,
+							"parameter_mmax" : 8.0,
 							"parameter_unitstyle" : 1
 						}
 
@@ -1789,11 +1790,11 @@
 						"1grain_on" : [ 0.0 ],
 						"1grain_pitch" : [ 0.0 ],
 						"1grain_position" : [ 0.0 ],
-						"1grain_size" : [ 0.0 ],
-						"1grain_speed" : [ 0.0 ],
-						"1grain_window" : [ 0.0 ],
+						"1grain_size" : [ 0.2 ],
+						"1grain_speed" : [ 0.1 ],
+						"1grain_window" : [ 0.2 ],
 						"1karma_half" : [ 0.0 ],
-						"1karma_pitch" : [ 0.0 ],
+						"1karma_pitch" : [ 1.0 ],
 						"1karma_position" : [ 0.0 ],
 						"1karma_record" : [ 0.0 ],
 						"1karma_reverse" : [ 0.0 ],
@@ -1812,7 +1813,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u647004399"
+					"varname" : "u448004235"
 				}
 
 			}
@@ -28946,11 +28947,11 @@
 			"obj-87" : [ "1grain_position", "live.numbox", 0 ],
 			"obj-29" : [ "1slice_random", "live.text", 0 ],
 			"obj-86" : [ "1slice_envelope", "live.numbox", 0 ],
-			"obj-25" : [ "1karma_half", "live.text", 0 ],
 			"obj-81" : [ "1slice_onset", "live.numbox", 0 ],
+			"obj-25" : [ "1karma_half", "live.text", 0 ],
 			"obj-76" : [ "1karma_window", "live.numbox", 0 ],
-			"obj-97" : [ "1grain_pitch", "live.numbox", 0 ],
 			"obj-77" : [ "1slice_rate", "live.numbox", 0 ],
+			"obj-97" : [ "1grain_pitch", "live.numbox", 0 ],
 			"obj-21" : [ "1karma_stop", "live.text", 0 ],
 			"obj-79" : [ "1slice_retrigger", "live.numbox", 0 ],
 			"obj-71" : [ "1karma_position", "live.numbox", 0 ],

@@ -319,7 +319,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u830035527"
+					"varname" : "u956002885"
 				}
 
 			}
@@ -539,7 +539,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 190.0, 266.0, 1487.0, 573.0 ],
+						"rect" : [ 190.0, 266.0, 1487.0, 503.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -567,24 +567,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
-								"box" : 								{
-									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-44",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 342.392853, 458.833374, 112.0, 22.0 ],
-									"style" : "",
-									"text" : "prepend strawpitch",
-									"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
-								}
-
-							}
-, 							{
 								"box" : 								{
 									"bgcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -971,7 +953,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 11.0, 527.268005, 107.0, 22.0 ],
+									"patching_rect" : [ 11.0, 451.268005, 107.0, 22.0 ],
 									"style" : "",
 									"text" : "s analysis_stream"
 								}
@@ -1197,7 +1179,7 @@
 													"destination" : [ "obj-33", 0 ],
 													"disabled" : 0,
 													"hidden" : 0,
-													"midpoints" : [ 41.5, 67.5, 406.125, 67.5 ],
+													"midpoints" : [ 41.5, 72.0, 406.125, 72.0 ],
 													"source" : [ "obj-2", 1 ]
 												}
 
@@ -1412,21 +1394,6 @@
 									"patching_rect" : [ 528.178589, 168.333344, 92.0, 22.0 ],
 									"style" : "",
 									"text" : "split 20. 20000."
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"fontname" : "Arial",
-									"fontsize" : 12.0,
-									"id" : "obj-1",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 342.392853, 430.0, 34.0, 22.0 ],
-									"style" : "",
-									"text" : "ftom"
 								}
 
 							}
@@ -2381,16 +2348,6 @@
 						"lines" : [ 							{
 								"patchline" : 								{
 									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"destination" : [ "obj-44", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"destination" : [ "obj-7", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -2833,7 +2790,7 @@
 									"destination" : [ "obj-7", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 1391.671875, 503.106995, 20.5, 503.106995 ],
+									"midpoints" : [ 1391.671875, 433.106995, 20.5, 433.106995 ],
 									"source" : [ "obj-182", 0 ]
 								}
 
@@ -2885,16 +2842,6 @@
 									"hidden" : 0,
 									"midpoints" : [ 579.678589, 388.465027, 20.5, 388.465027 ],
 									"source" : [ "obj-19", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-1", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"midpoints" : [ 365.285706, 196.75, 351.892853, 196.75 ],
-									"source" : [ "obj-191", 0 ]
 								}
 
 							}
@@ -3136,17 +3083,6 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-43", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"color" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"destination" : [ "obj-7", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"midpoints" : [ 351.892853, 487.916687, 20.5, 487.916687 ],
-									"source" : [ "obj-44", 0 ]
 								}
 
 							}
@@ -3707,12 +3643,12 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-5" : [ "brain_pitch", "live.text", 0 ],
-			"obj-3" : [ "brain_stutter", "live.text", 0 ],
-			"obj-27" : [ "brainfx", "live.text", 0 ],
 			"obj-7" : [ "brain_dirt", "live.text", 0 ],
 			"obj-6" : [ "brain_lofi", "live.text", 0 ],
-			"obj-70" : [ "brainfxmorph", "live.numbox", 0 ]
+			"obj-70" : [ "brainfxmorph", "live.numbox", 0 ],
+			"obj-5" : [ "brain_pitch", "live.text", 0 ],
+			"obj-3" : [ "brain_stutter", "live.text", 0 ],
+			"obj-27" : [ "brainfx", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

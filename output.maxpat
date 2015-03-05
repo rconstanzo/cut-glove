@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 471.0, 267.0, 461.0, 419.0 ],
+		"rect" : [ 806.0, 358.0, 444.0, 420.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -38,6 +38,53 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 68.0, 190.475586, 62.0, 22.0 ],
+					"style" : "",
+					"text" : "cascade~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"color" : [ 0.364706, 0.807843, 1.0, 1.0 ],
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-1131",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 111.0, 86.475586, 71.0, 22.0 ],
+					"style" : "",
+					"text" : "r cut_outeq"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-1126",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 31.0, 156.475586, 62.0, 22.0 ],
+					"style" : "",
+					"text" : "cascade~"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"activebgcolor" : [ 0.0, 0.0, 0.0, 0.2 ],
 					"activeslidercolor" : [ 0.0, 0.0, 0.0, 0.2 ],
 					"appearance" : 2,
@@ -52,7 +99,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 137.97554, 164.475586, 44.0, 17.0 ],
+					"patching_rect" : [ 189.97554, 161.475586, 44.0, 17.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.459595, 6.224998, 56.0, 17.0 ],
 					"saved_attribute_attributes" : 					{
@@ -292,8 +339,8 @@
 , 							{
 								"name" : "rsliderGold",
 								"default" : 								{
-									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -302,7 +349,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 137.97554, 89.475586, 131.0, 22.0 ],
+					"patching_rect" : [ 189.97554, 86.475586, 131.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -393,7 +440,7 @@
 					"orientation" : 0,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 137.97554, 131.945312, 34.0, 14.0 ],
+					"patching_rect" : [ 189.97554, 128.945312, 34.0, 14.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.459595, 29.782455, 126.0, 20.0 ],
 					"setminmax" : [ 0.0, 1.0 ],
@@ -525,7 +572,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 282.835846, 143.751953, 23.5, 17.0 ],
+					"patching_rect" : [ 334.835846, 140.751953, 23.5, 17.0 ],
 					"style" : "",
 					"text" : "0.9",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
@@ -542,7 +589,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 282.835846, 119.945312, 45.0, 22.0 ],
+					"patching_rect" : [ 334.835846, 116.945312, 45.0, 22.0 ],
 					"style" : "",
 					"text" : "r bang"
 				}
@@ -556,7 +603,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 191.709625, 164.475586, 72.0, 20.0 ],
+					"patching_rect" : [ 243.709625, 161.475586, 72.0, 20.0 ],
 					"style" : "",
 					"text" : "output level"
 				}
@@ -591,7 +638,7 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 137.97554, 193.475586, 99.0, 22.0 ],
+					"patching_rect" : [ 189.97554, 190.475586, 99.0, 22.0 ],
 					"style" : "",
 					"text" : "scale 0. 1. 0 128"
 				}
@@ -662,7 +709,7 @@
 					"destination" : [ "obj-5", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 292.335846, 160.11377, 147.47554, 160.11377 ],
+					"midpoints" : [ 344.335846, 157.11377, 199.47554, 157.11377 ],
 					"source" : [ "obj-1121", 0 ]
 				}
 
@@ -679,11 +726,51 @@
 			}
 , 			{
 				"patchline" : 				{
+					"color" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"destination" : [ "obj-339", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1126", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.364706, 0.807843, 1.0, 1.0 ],
+					"destination" : [ "obj-1126", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1131", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.364706, 0.807843, 1.0, 1.0 ],
+					"destination" : [ "obj-12", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1131", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 1.0, 1.0, 0.0, 1.0 ],
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-12", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ],
 					"destination" : [ "obj-339", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 147.47554, 229.610596, 41.0, 229.610596 ],
+					"midpoints" : [ 199.47554, 229.610596, 41.0, 229.610596 ],
 					"source" : [ "obj-151", 0 ]
 				}
 
@@ -694,7 +781,7 @@
 					"destination" : [ "obj-4", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 147.47554, 229.610596, 78.0, 229.610596 ],
+					"midpoints" : [ 199.47554, 229.610596, 78.0, 229.610596 ],
 					"source" : [ "obj-151", 0 ]
 				}
 
@@ -702,7 +789,7 @@
 , 			{
 				"patchline" : 				{
 					"color" : [ 1.0, 1.0, 0.0, 1.0 ],
-					"destination" : [ "obj-339", 0 ],
+					"destination" : [ "obj-1126", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-3", 0 ]
@@ -779,7 +866,7 @@
 , 			{
 				"patchline" : 				{
 					"color" : [ 1.0, 1.0, 0.0, 1.0 ],
-					"destination" : [ "obj-4", 0 ],
+					"destination" : [ "obj-12", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-8", 0 ]
@@ -896,8 +983,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

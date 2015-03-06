@@ -14510,9 +14510,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 29.048279, 212.742722, 112.0, 22.0 ],
+									"patching_rect" : [ 29.048279, 212.742722, 54.0, 22.0 ],
 									"style" : "",
-									"text" : "gate"
+									"text" : "gate 1 1"
 								}
 
 							}
@@ -16661,7 +16661,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u545043905"
+					"varname" : "u722041229"
 				}
 
 			}

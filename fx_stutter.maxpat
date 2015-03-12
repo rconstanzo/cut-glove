@@ -292,16 +292,17 @@
 , 							{
 								"box" : 								{
 									"color" : [ 0.501961, 1.0, 0.0, 1.0 ],
+									"fontface" : 0,
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
 									"id" : "obj-1091",
 									"maxclass" : "newobj",
-									"numinlets" : 0,
+									"numinlets" : 1,
 									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 112.444702, 67.0, 45.0, 22.0 ],
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 112.444702, 67.0, 60.0, 22.0 ],
 									"style" : "",
-									"text" : "r bang"
+									"text" : "loadbang"
 								}
 
 							}
@@ -576,7 +577,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u959034100"
+					"varname" : "u279041343"
 				}
 
 			}
@@ -2370,16 +2371,17 @@
 , 															{
 																"box" : 																{
 																	"color" : [ 0.501961, 1.0, 0.0, 1.0 ],
+																	"fontface" : 0,
 																	"fontname" : "Arial",
 																	"fontsize" : 12.0,
 																	"id" : "obj-1091",
 																	"maxclass" : "newobj",
-																	"numinlets" : 0,
+																	"numinlets" : 1,
 																	"numoutlets" : 1,
-																	"outlettype" : [ "" ],
-																	"patching_rect" : [ 116.0, 74.0, 45.0, 22.0 ],
+																	"outlettype" : [ "bang" ],
+																	"patching_rect" : [ 116.0, 74.0, 60.0, 22.0 ],
 																	"style" : "",
-																	"text" : "r bang"
+																	"text" : "loadbang"
 																}
 
 															}
@@ -8373,14 +8375,14 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-50" : [ "stutteroverdub", "live.text", 0 ],
-			"obj-6" : [ "stutterrate", "live.numbox", 0 ],
-			"obj-49" : [ "stutterrec", "live.text", 0 ],
-			"obj-5" : [ "stutterdd", "live.text", 0 ],
 			"obj-14" : [ "stutterdensity", "live.numbox", 0 ],
-			"obj-45" : [ "stutter", "live.text", 0 ],
+			"obj-49" : [ "stutterrec", "live.text", 0 ],
 			"obj-2" : [ "stutterkill", "live.text", 0 ],
-			"obj-51" : [ "stutterrand", "live.text", 0 ]
+			"obj-50" : [ "stutteroverdub", "live.text", 0 ],
+			"obj-51" : [ "stutterrand", "live.text", 0 ],
+			"obj-5" : [ "stutterdd", "live.text", 0 ],
+			"obj-6" : [ "stutterrate", "live.numbox", 0 ],
+			"obj-45" : [ "stutter", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

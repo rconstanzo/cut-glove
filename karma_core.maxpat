@@ -16415,7 +16415,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u492072235"
+					"varname" : "u740127863"
 				}
 
 			}
@@ -16556,7 +16556,7 @@
 				"box" : 				{
 					"angle" : -90.0,
 					"background" : 1,
-					"bgcolor" : [ 0.141176, 0.14902, 0.172549, 0.501961 ],
+					"bgcolor" : [ 0.141176, 0.14902, 0.172549, 0.5 ],
 					"border" : 1,
 					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-105",
@@ -16577,7 +16577,7 @@
 				"box" : 				{
 					"angle" : -90.0,
 					"background" : 1,
-					"bgcolor" : [ 0.141176, 0.14902, 0.172549, 0.501961 ],
+					"bgcolor" : [ 0.141176, 0.14902, 0.172549, 0.5 ],
 					"border" : 1,
 					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"id" : "obj-127",
@@ -16858,30 +16858,31 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-99" : [ "#1brainkarma", "live.text", 0 ],
+			"obj-51::obj-81" : [ "#1slice_onset", "live.numbox", 0 ],
+			"obj-50::obj-87" : [ "#1grain_position", "live.numbox", 0 ],
 			"obj-42::obj-71" : [ "#1karma_position", "live.numbox", 0 ],
-			"obj-50::obj-45" : [ "#1grain_freeze[1]", "live.text", 0 ],
-			"obj-51::obj-43" : [ "#1slice_half[1]", "live.text", 0 ],
-			"obj-50::obj-88" : [ "#1grain_speed[1]", "live.numbox", 0 ],
-			"obj-51::obj-79" : [ "#1slice_retrigger[1]", "live.numbox", 0 ],
-			"obj-42::obj-20" : [ "#1karma_record", "live.text", 0 ],
-			"obj-50::obj-94" : [ "#1grain_size[1]", "live.numbox", 0 ],
-			"obj-51::obj-28" : [ "#1slice_on[1]", "live.text", 0 ],
-			"obj-51::obj-86" : [ "#1slice_envelope[1]", "live.numbox", 0 ],
-			"obj-42::obj-27" : [ "#1karma_reverse", "live.text", 0 ],
-			"obj-50::obj-44" : [ "#1grain_on[1]", "live.text", 0 ],
-			"obj-51::obj-41" : [ "#1slice_reverse[1]", "live.text", 0 ],
-			"obj-50::obj-97" : [ "#1grain_pitch[1]", "live.numbox", 0 ],
-			"obj-50::obj-87" : [ "#1grain_position[1]", "live.numbox", 0 ],
-			"obj-42::obj-25" : [ "#1karma_half", "live.text", 0 ],
+			"obj-51::obj-86" : [ "#1slice_envelope", "live.numbox", 0 ],
+			"obj-51::obj-29" : [ "#1slice_random", "live.text", 0 ],
+			"obj-50::obj-94" : [ "#1grain_size", "live.numbox", 0 ],
 			"obj-42::obj-21" : [ "#1karma_stop", "live.text", 0 ],
-			"obj-51::obj-77" : [ "#1slice_rate[1]", "live.numbox", 0 ],
-			"obj-115" : [ "#1pattern", "live.text", 0 ],
-			"obj-50::obj-91" : [ "#1grain_window[1]", "live.numbox", 0 ],
-			"obj-51::obj-81" : [ "#1slice_onset[1]", "live.numbox", 0 ],
-			"obj-42::obj-70" : [ "#1karma_pitch", "live.numbox", 0 ],
+			"obj-42::obj-20" : [ "#1karma_record", "live.text", 0 ],
+			"obj-51::obj-14" : [ "#1slice_envelope_on", "live.text", 0 ],
+			"obj-51::obj-77" : [ "#1slice_rate", "live.numbox", 0 ],
+			"obj-50::obj-45" : [ "#1grain_freeze", "live.text", 0 ],
+			"obj-50::obj-88" : [ "#1grain_speed", "live.numbox", 0 ],
 			"obj-42::obj-76" : [ "#1karma_window", "live.numbox", 0 ],
-			"obj-51::obj-29" : [ "#1slice_random[1]", "live.text", 0 ]
+			"obj-99" : [ "#1brainkarma", "live.text", 0 ],
+			"obj-42::obj-27" : [ "#1karma_reverse", "live.text", 0 ],
+			"obj-51::obj-43" : [ "#1slice_half", "live.text", 0 ],
+			"obj-51::obj-79" : [ "#1slice_retrigger", "live.numbox", 0 ],
+			"obj-50::obj-44" : [ "#1grain_on", "live.text", 0 ],
+			"obj-50::obj-91" : [ "#1grain_window", "live.numbox", 0 ],
+			"obj-115" : [ "#1pattern", "live.text", 0 ],
+			"obj-42::obj-25" : [ "#1karma_half", "live.text", 0 ],
+			"obj-51::obj-28" : [ "#1slice_on", "live.text", 0 ],
+			"obj-51::obj-41" : [ "#1slice_reverse", "live.text", 0 ],
+			"obj-50::obj-97" : [ "#1grain_pitch", "live.numbox", 0 ],
+			"obj-42::obj-70" : [ "#1karma_pitch", "live.numbox", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

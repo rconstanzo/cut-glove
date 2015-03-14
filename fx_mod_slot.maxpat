@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -117,7 +117,7 @@
 					"patching_rect" : [ 441.5, 317.60083, 59.5, 22.0 ],
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u033162876"
+					"varname" : "u597002750"
 				}
 
 			}
@@ -290,6 +290,7 @@
 				"box" : 				{
 					"align" : 1,
 					"arrow" : 0,
+					"bgcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 					"bgfillcolor_angle" : 270.0,
 					"bgfillcolor_autogradient" : 0,
 					"bgfillcolor_color" : [ 0.0, 0.0, 0.0, 0.0 ],
@@ -300,7 +301,7 @@
 					"fontname" : "Helvetica",
 					"hint" : "Select FX module",
 					"id" : "obj-1",
-					"items" : [ "chopper", ",", "dirt", ",", "lofi", ",", "pitch", ",", "shuffler", ",", "stutter" ],
+					"items" : [ "chopper", ",", "dirt", ",", "lofi", ",", "pitch", ",", "reverb", ",", "shuffler", ",", "stutter" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -614,12 +615,12 @@
 		"parameters" : 		{
 			"obj-48::obj-19::obj-14" : [ "stutterdensity", "live.numbox", 0 ],
 			"obj-48::obj-19::obj-49" : [ "stutterrec", "live.text", 0 ],
+			"obj-48::obj-19::obj-45" : [ "stutter", "live.text", 0 ],
 			"obj-48::obj-19::obj-2" : [ "stutterkill", "live.text", 0 ],
 			"obj-48::obj-19::obj-50" : [ "stutteroverdub", "live.text", 0 ],
 			"obj-48::obj-19::obj-51" : [ "stutterrand", "live.text", 0 ],
 			"obj-48::obj-19::obj-5" : [ "stutterdd", "live.text", 0 ],
-			"obj-48::obj-19::obj-6" : [ "stutterrate", "live.numbox", 0 ],
-			"obj-48::obj-19::obj-45" : [ "stutter", "live.text", 0 ]
+			"obj-48::obj-19::obj-6" : [ "stutterrate", "live.numbox", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -746,8 +747,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -765,8 +766,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

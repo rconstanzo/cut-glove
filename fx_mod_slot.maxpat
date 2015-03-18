@@ -117,7 +117,7 @@
 					"patching_rect" : [ 441.5, 317.60083, 59.5, 22.0 ],
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u597002750"
+					"varname" : "u776015172"
 				}
 
 			}
@@ -301,7 +301,7 @@
 					"fontname" : "Helvetica",
 					"hint" : "Select FX module",
 					"id" : "obj-1",
-					"items" : [ "chopper", ",", "dirt", ",", "lofi", ",", "pitch", ",", "reverb", ",", "shuffler", ",", "stutter" ],
+					"items" : [ "chopper", ",", "cloud", ",", "dirt", ",", "lofi", ",", "pitch", ",", "reverb", ",", "shuffler", ",", "stutter" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -345,7 +345,7 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 8,
+						"count" : 9,
 						"data" : [ 							{
 								"key" : "stutter",
 								"value" : [ "fx_mod_stutter.maxpat" ]
@@ -377,6 +377,10 @@
 , 							{
 								"key" : "shuffler",
 								"value" : [ "fx_mod_shuffler.maxpat" ]
+							}
+, 							{
+								"key" : "cloud",
+								"value" : [ "fx_mod_cloud.maxpat" ]
 							}
  ]
 					}
@@ -613,14 +617,14 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-48::obj-19::obj-14" : [ "stutterdensity", "live.numbox", 0 ],
-			"obj-48::obj-19::obj-49" : [ "stutterrec", "live.text", 0 ],
-			"obj-48::obj-19::obj-45" : [ "stutter", "live.text", 0 ],
-			"obj-48::obj-19::obj-2" : [ "stutterkill", "live.text", 0 ],
 			"obj-48::obj-19::obj-50" : [ "stutteroverdub", "live.text", 0 ],
 			"obj-48::obj-19::obj-51" : [ "stutterrand", "live.text", 0 ],
 			"obj-48::obj-19::obj-5" : [ "stutterdd", "live.text", 0 ],
-			"obj-48::obj-19::obj-6" : [ "stutterrate", "live.numbox", 0 ]
+			"obj-48::obj-19::obj-6" : [ "stutterrate", "live.numbox", 0 ],
+			"obj-48::obj-19::obj-14" : [ "stutterdensity", "live.numbox", 0 ],
+			"obj-48::obj-19::obj-49" : [ "stutterrec", "live.text", 0 ],
+			"obj-48::obj-19::obj-45" : [ "stutter", "live.text", 0 ],
+			"obj-48::obj-19::obj-2" : [ "stutterkill", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -747,8 +751,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

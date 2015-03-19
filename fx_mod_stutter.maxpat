@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 1,
+			"revision" : 2,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -75,7 +75,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -119,7 +119,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -506,7 +506,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -582,12 +582,12 @@
 													"fontsize" : 12.0,
 													"id" : "obj-38",
 													"maxclass" : "newobj",
-													"numinlets" : 5,
-													"numoutlets" : 5,
-													"outlettype" : [ "", "", "", "", "" ],
-													"patching_rect" : [ 34.0, 136.402588, 142.0, 22.0 ],
+													"numinlets" : 2,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "" ],
+													"patching_rect" : [ 34.0, 136.402588, 75.0, 22.0 ],
 													"style" : "",
-													"text" : "route stutter pitch lofi dirt"
+													"text" : "route stutter"
 												}
 
 											}
@@ -831,7 +831,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -1113,7 +1113,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -1225,7 +1225,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -1898,7 +1898,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -2300,7 +2300,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -2642,7 +2642,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -3373,7 +3373,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -4600,7 +4600,7 @@
 					"patching_rect" : [ 174.523682, 246.5, 59.5, 22.0 ],
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u683150931"
+					"varname" : "u851019231"
 				}
 
 			}
@@ -4644,7 +4644,7 @@
 						"appversion" : 						{
 							"major" : 7,
 							"minor" : 0,
-							"revision" : 1,
+							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -4743,7 +4743,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -4939,7 +4939,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -5238,7 +5238,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -5791,6 +5791,7 @@
 											}
 , 											{
 												"box" : 												{
+													"bgcolor" : [ 0.501961, 1.0, 0.0, 1.0 ],
 													"bgfillcolor_angle" : 270.0,
 													"bgfillcolor_autogradient" : 0.79,
 													"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -5800,6 +5801,7 @@
 													"bgfillcolor_type" : "gradient",
 													"fontname" : "Arial",
 													"fontsize" : 8.0,
+													"gradient" : 0,
 													"id" : "obj-124",
 													"maxclass" : "message",
 													"numinlets" : 2,
@@ -6348,7 +6350,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -6475,7 +6477,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -6774,7 +6776,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -7327,6 +7329,7 @@
 											}
 , 											{
 												"box" : 												{
+													"bgcolor" : [ 0.501961, 1.0, 0.0, 1.0 ],
 													"bgfillcolor_angle" : 270.0,
 													"bgfillcolor_autogradient" : 0.79,
 													"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -7336,6 +7339,7 @@
 													"bgfillcolor_type" : "gradient",
 													"fontname" : "Arial",
 													"fontsize" : 8.0,
+													"gradient" : 0,
 													"id" : "obj-124",
 													"maxclass" : "message",
 													"numinlets" : 2,
@@ -7817,7 +7821,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -7929,7 +7933,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -8228,7 +8232,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -8811,6 +8815,7 @@
 											}
 , 											{
 												"box" : 												{
+													"bgcolor" : [ 0.501961, 1.0, 0.0, 1.0 ],
 													"bgfillcolor_angle" : 270.0,
 													"bgfillcolor_autogradient" : 0.79,
 													"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -8820,6 +8825,7 @@
 													"bgfillcolor_type" : "gradient",
 													"fontname" : "Arial",
 													"fontsize" : 8.0,
+													"gradient" : 0,
 													"id" : "obj-124",
 													"maxclass" : "message",
 													"numinlets" : 2,
@@ -9310,7 +9316,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -9422,7 +9428,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -9721,7 +9727,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -10305,6 +10311,7 @@
 											}
 , 											{
 												"box" : 												{
+													"bgcolor" : [ 0.501961, 1.0, 0.0, 1.0 ],
 													"bgfillcolor_angle" : 270.0,
 													"bgfillcolor_autogradient" : 0.79,
 													"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -10314,6 +10321,7 @@
 													"bgfillcolor_type" : "gradient",
 													"fontname" : "Arial",
 													"fontsize" : 8.0,
+													"gradient" : 0,
 													"id" : "obj-124",
 													"maxclass" : "message",
 													"numinlets" : 2,
@@ -10804,7 +10812,7 @@
 										"appversion" : 										{
 											"major" : 7,
 											"minor" : 0,
-											"revision" : 1,
+											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -10916,7 +10924,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -11215,7 +11223,7 @@
 														"appversion" : 														{
 															"major" : 7,
 															"minor" : 0,
-															"revision" : 1,
+															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
 														}
@@ -11814,6 +11822,7 @@
 											}
 , 											{
 												"box" : 												{
+													"bgcolor" : [ 0.501961, 1.0, 0.0, 1.0 ],
 													"bgfillcolor_angle" : 270.0,
 													"bgfillcolor_autogradient" : 0.79,
 													"bgfillcolor_color" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
@@ -11823,6 +11832,7 @@
 													"bgfillcolor_type" : "gradient",
 													"fontname" : "Arial",
 													"fontsize" : 8.0,
+													"gradient" : 0,
 													"id" : "obj-124",
 													"maxclass" : "message",
 													"numinlets" : 2,
@@ -12576,14 +12586,14 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-19::obj-2" : [ "stutterkill", "live.text", 0 ],
 			"obj-19::obj-50" : [ "stutteroverdub", "live.text", 0 ],
 			"obj-19::obj-51" : [ "stutterrand", "live.text", 0 ],
-			"obj-19::obj-45" : [ "stutter", "live.text", 0 ],
 			"obj-19::obj-5" : [ "stutterdd", "live.text", 0 ],
 			"obj-19::obj-6" : [ "stutterrate", "live.numbox", 0 ],
 			"obj-19::obj-14" : [ "stutterdensity", "live.numbox", 0 ],
-			"obj-19::obj-49" : [ "stutterrec", "live.text", 0 ]
+			"obj-19::obj-49" : [ "stutterrec", "live.text", 0 ],
+			"obj-19::obj-45" : [ "stutter", "live.text", 0 ],
+			"obj-19::obj-2" : [ "stutterkill", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{

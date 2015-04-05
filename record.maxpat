@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -164,7 +164,7 @@
 					"outlettype" : [ "list" ],
 					"patching_rect" : [ 113.008179, 96.030273, 30.0, 16.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.56189, 23.249298, 42.0, 8.0 ],
+					"presentation_rect" : [ 0.56189, 24.249298, 42.0, 8.0 ],
 					"slidercolor" : [ 0.0, 0.0, 0.0, 0.2 ],
 					"warmcolor" : [ 0.662639, 0.263952, 0.677225, 1.0 ]
 				}

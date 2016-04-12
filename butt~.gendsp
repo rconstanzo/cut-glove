@@ -1,0 +1,103 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 7,
+			"minor" : 2,
+			"revision" : 1,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"rect" : [ 34.0, 78.0, 1011.0, 1084.0 ],
+		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
+		"boxes" : [ 			{
+				"box" : 				{
+					"code" : "//\tButt~ - a dirty filter based on a basic biquad...\n//\tby Pierre Alexandre Tremblay\n//  v.2 - optimised at the University of Huddersfield, thanks to the hints and discussions with Peter Castine, Alex Harker, Kit Clayton and Apple Dev Website\n//  v.3 in gen~\n\n\n// the methods\n\nParam freq(666,min=1,max=20000);\nParam bw(0.666,min=0.01,max=100);\nParam dirt(0,min=0,max=1);\nParam type(3, min=1, max=4);\n\n// the delays\n\nHistory b_in1, b_in2, b_ou1, b_ou2;\nb_in0 = in1;\r\n\n// constants\n\ntemp_ln=0.34657359027997265471;\nb_piDsr=(2. * pi) / samplerate;\n\r\nb0 = 0;\nb1 = 0;\nb2 = 0;\na0 = 0;\na1 = 0;\na2 = 0;\n\n// process bandwidth\nomega = (b_piDsr) * (freq);\ntsin = sin(omega);\ntcos = cos(omega);\nalpha = tsin * sinh(temp_ln * (bw) * omega / tsin);\t\t// bandwidth\n\n// then process coefficients\nif(type == 1) {\n\tb0=(1.0-tcos)/2.0;\n\tb1=1.0-tcos;\n\tb2=(1.0-tcos)/2.0;\n\ta0=1.0+alpha;\n\ta1=-2.0*tcos;\n\ta2=1.0-alpha;\n}\nelse if(type ==  2) {\n\tb0 = (1.0 + tcos) /2.0;\n\tb1 = -(1.0 + tcos);\n\tb2 = (1.0 + tcos) /2.0;\n\ta0 = 1.0 + alpha;\n\ta1 = -2.0 * tcos;\n\ta2 = 1.0 - alpha;\n}\nelse if (type == 3) {\n\tb0=alpha;\n\tb1=0.0;\n\tb2=-alpha;\n\ta0=1.0+alpha;\n\ta1=-2.0*tcos;\n\ta2=1.0-alpha;\n}\nelse if (type == 4) {\n    b0 = 1.0;\n\tb1 = -2.0 * tcos;\n    b2 = 1.0;\n\ta0 = 1.0 + alpha;\n\ta1 = -2.0 * tcos;\n    a2 = 1.0 - alpha;\n}\n\t\t\t\nb0a0 = b0/a0;\t\t\t\t\t\t\t\t\t\t\t\t\t\nb1a0 = b1/a0;\nb2a0 = b2/a0;\na1a0 = a1/a0;\na2a0 = a2/a0;\t\t\n\n\nout1 = b0a0*b_in0 + b1a0*b_in1 + b2a0*b_in2 - a1a0*b_ou1 - a2a0*b_ou2;\n\n\nb_in2 = b_in1 * (1. - (dirt * noise())); // adding some dirty to the buffers!\nb_in1 = b_in0 * (1. - (dirt * noise()));\nb_ou2 = b_ou1 * (1. - (dirt * noise()));\nb_ou1 = out1 * (1. - (dirt * noise()));",
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-7",
+					"maxclass" : "codebox",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 50.0, 42.0, 834.0, 1003.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 50.0, 14.0, 30.0, 22.0 ],
+					"style" : "",
+					"text" : "in 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 50.0, 1052.0, 37.0, 22.0 ],
+					"style" : "",
+					"text" : "out 1"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+ ]
+	}
+
+}

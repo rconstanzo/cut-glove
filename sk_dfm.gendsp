@@ -1,0 +1,312 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 7,
+			"minor" : 1,
+			"revision" : 0,
+			"architecture" : "x86",
+			"modernui" : 1
+		}
+,
+		"rect" : [ 38.0, 78.0, 854.0, 615.0 ],
+		"bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
+		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 10.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial Bold",
+		"gridonopen" : 2,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
+		"boxes" : [ 			{
+				"box" : 				{
+					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"hint" : "click-click",
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 7,
+							"minor" : 1,
+							"revision" : 0,
+							"architecture" : "x86",
+							"modernui" : 1
+						}
+,
+						"rect" : [ 420.0, 180.0, 440.0, 294.0 ],
+						"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 1,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 2,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 2,
+						"toptoolbarpinned" : 2,
+						"righttoolbarpinned" : 2,
+						"bottomtoolbarpinned" : 2,
+						"toolbars_unpinned_last_save" : 15,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"title" : "DFM LICENSE",
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-6",
+									"linecount" : 21,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 3.0, 3.0, 434.0, 288.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 21,
+									"presentation_rect" : [ 3.0, 3.0, 434.0, 288.0 ],
+									"style" : "",
+									"text" : "/* -------------------------------------------------------------------------------\n * DFM-1 Digital Filter Module\n * Copyright (C) 2010, 2011, 2013\n *\n * Tony Hardie-Bick <tony@entitysynth.net> - Java version (original)\n * Jonny Stutters <jstutters@jeremah.co.uk> - SuperCollider port\n * Pete Dowling <hello@steadykammer.net> - Gen port\n *\n * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program. If not, see <http://www.gnu.org/licenses/>.\n * ------------------------------------------------------------------------------ */\n"
+								}
+
+							}
+ ],
+						"lines" : [  ]
+					}
+,
+					"patching_rect" : [ 569.333313, 49.5, 105.0, 20.0 ],
+					"style" : "",
+					"text" : "gen @title LICENSE"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 722.0, 577.0, 108.0, 20.0 ],
+					"style" : "",
+					"text" : "out 2 Right / nothing"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 32.0, 577.0, 90.0, 20.0 ],
+					"style" : "",
+					"text" : "out 1 Left / Mono"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 715.0, 115.0, 115.0, 20.0 ],
+					"style" : "",
+					"text" : "in 4 Resonance 0..1++"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 551.333313, 115.0, 123.0, 20.0 ],
+					"style" : "",
+					"text" : "in 3 Cutoff in MIDI Pitch"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 291.666656, 115.0, 101.0, 20.0 ],
+					"style" : "",
+					"text" : "in 2 Right / nothing"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 32.0, 115.0, 84.0, 20.0 ],
+					"style" : "",
+					"text" : "in 1 Left / Mono"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"code" : "// deluxe but dirty-as-hell MS20-inspired old-skool-DSP-style (z-1) filter,\r\n// 12dB lowpass or 6dB highpass\r\n// based on a classic by Tony Hardie-Bick (\"DFM-1 Digital Filter Module\")\r\n// thanks to Jonny Stutters for his SuperCollider analysis\r\n// dirty MSP/gen~ reworking by Pete Dowling, 2013 (thanks to Matt Jackson for the LUT assistance)\r\n// LICENSE: GPLv2\r\n\r\n// // // functions\r\n\r\n// for tauA(), mtofApproxA(), dbtoaApproxA()\nexpA(x0)\t\t\t\t\t\t\t\t\t// approx exp(x) (more accurate than 'fastexp()')\n{\n\tx = 0.999996 + (0.031261316 + (0.00048274797 + 0.000006 * x0) * x0) * x0;\n\tx *= x; x *= x; x *= x; x *= x; x *= x;\n\treturn x;\n}\n\n// for expsmoothBank4()\ntauA(t)\t\t\t\t\t\t\t\t\t\t// approximate 'exp(-1 / (seconds * samplerate))'\n{\n\ty = expA(-1 / (t * samplerate));\n\treturn y + 0.000128;\t\t\t\t\t// approximation has excellent accuracy above...\n}\t\t\t\t\t\t\t\t\t\t\t// ...0.01 seconds (10 milliseconds) input\n\n// for exp bank\nexpso(x, z)\t\t\t\t\t\t\t\t\t// z is pole\n{\n\tHistory w(0);\n\ty = (z * w) + (x * (1 - z));\n\tw = y;\n\treturn y;\n}\n\nexpsmoothBank4(x1, x2, x3, x4, t)\t\t\t// t is smooth time in seconds\n{\n\tHistory\texpsdummy4(0);\n\tz\t\t= tauA(t);\n\ty1\t\t= expso(x1, z);\n\ty2\t\t= expso(x2, z);\n\ty3\t\t= expso(x3, z);\n\ty4\t\t= expso(x4, z);\n\treturn\ty1, y2, y3, y4;\n}\r\n\r\nlogsmooth(x, s)\t\t// x = value\t\t\t// s = time to drop 6dB (in seconds)\n{\n\tHistory z(0);\n\tad = 0.693147 / (s * samplerate);\t\t// !! no maximum check\n\ty  = ((x - z) * ad) + z;\n\tz  = y;\n\treturn y;\n}\n\r\n// like msp [line~] (i.e., exact ramping), but with switchable curve on (default) / off\nlineCurve(D, R, S)\t\t\t\t\t\t\t// target, ramp time in samples, curve off/on flag 0/1\n{\n\tHistory\ttarget(0), current(0), remain(0), increment(1);\n\tHistory\tcurve(1);\t\t\t\t\t\t// default curve on\n\tnotify\t= 1;\n\tif (delta(D) != 0) {\n\t\ttarget\t\t= D;\n\t\tremain\t\t= maximum(R, 0);\n\t\tincrement\t= (target - current) / remain;\t\n\t}\n\tif (remain > 0) {\t\t\t\t\t\t// is ramping\n\t\t// linear (like MSP [line~])\n\t\tcurrent\t= target - increment * remain;\n\t\tremain\t= remain - 1;\n\t\t// curve (thanks to Alex Harker)\n\t\tif (curve) {\t\t\t\t\t\t// if (S > 0) use curve\n\t\t\tc2\t= current * current;\n\t\t\trec\t= (1 - current);\n\t\t\tr2\t= rec * rec;\n\t\t\tcurrent\t= (current < 0.5) ? (c2 * 2) : (1 - (r2 * 2));\n\t\t}\n\t\tnotify\t= 0;\n\t} else {\t\t\t\t\t\t\t\t// ramp concluded\n\t\tcurrent\t= target;\n\t\tnotify\t= 1;\n\t}\n\tcurve\t= latch(S, notify);\t\t\t\t// only pass curve flag on end ramp\n\treturn\tcurrent, notify;\n}\r\n\r\n// quadrant for cos approx\r\ncosQ52(x)\r\n{\n\tc1 =  0.9999932946;\n\tc2 = -0.4999124376;\n\tc3 =  0.0414877472;\n\tc4 = -0.0012712095;\n\n\tx2 = x * x;\n\treturn (c1 + x2 * (c2 + x2 * (c3 + c4 * x2)));\n}\n\r\n// cos approx 5.2 digits of precision\ncos_52(x)\r\n{\n\ttwo_over_pi = 0.63661977236758;\t// 2 / pi\n/*\tx = x % twopi;\t\t\t\t\t// get rid of values > 2 * pi\n\tif (x < 0) {\n\t\tx = -x;\t\t\t\t\t\t// cos(-x) = cos(x)\n\t}*/\n\tquad = int(x * two_over_pi);\t// get quadrant # (0 to 3) we're in\n\tcosreturn = 0;\n\tif \t\t\t\t(quad == 0) {\n\t\tcosreturn =  cosQ52(x);\n\t} else if \t\t(quad == 1) {\n\t\tcosreturn = -cosQ52(pi - x);\n\t} else if \t\t(quad == 2) {\n\t\tcosreturn = -cosQ52(x - pi);\n\t} else {\t//\t(quad == 3)\n\t\tcosreturn =  cosQ52(twopi - x);\n\t}\n\treturn cosreturn;\n}\r\n\r\n// cheaper than library 'mtof()'\nmtofApproxA(pitch, tuning)\t\t\t// tuning base in Hz, should be default 440\n{\n\tmtofA = tuning * expA(0.057762265 * (pitch - 69));\n\treturn mtofA + 0.120906;\t\t// + offset = accurate for input 48..69\n}\r\n\r\n// still cheaper than library 'dbtoa()', good accuracy to about +36 dB, after which you are on your own\ndbtoaApproxA(db)\t\t\t\t\t// using 'expA()'\n{\n\tdbtoaA = expA(0.11512925464970 * db);\n\treturn dbtoaA + 0.000128;\t\t// + offset = 0 dB == 1 amplitude\n}\r\n\r\n// much cheaper than library 'dbtoa()', ok for +/- 12 dB input\r\ndbtoaApproxC(db)\t\t\t\t\t// i know this is shit, but it is cheap(er)\n{\n\treturn fastpow(10, (db * 0.05)) + 0.028652;\t// + offset = 0 dB == 1 amplitude\n}\r\n\r\n/*\r\n// sqrt approx, newton recursion, total crap for low noise values\r\nsqrtNewton(x)\n{\n\tHistory y1(0), y2(0);\n\ty3 = (y1 + y2) * 0.5;\n\ty0 = (maximum(x, 0)) / (y3 + ((y3 <= 0) * 0.000001));\n\ty2 = y1;\n\ty1 = y0;\n\n\treturn y0;\n}\r\n*/\r\n// quasi box-muller algo (not 'ziggurat' but ok !)\r\ngRng(gain)\r\n{\r\n\tgnm1 = 1 - gain;\r\n\tnz = noise();\r\n\tcz = cos_52((noise() * pi) + pi) + 0.000007;\t// + offset = accurate for extremes (-1/1) not around zero\r\n\tnzmax = maximum(nz, 0);\r\n\tnzmin = minimum(nz, 0) * -1;\r\n\treturn sqrt((ln(((nzmax + nzmin) * gain) + gnm1) * -2)) * cz;\t// 'sqrt()' yuck, 'ln()' yuck, needs rewrite\r\n}\r\n\r\n// wrap box-muller with gain stage\r\nguassnoise(gain, ngain)\r\n{\r\n\tnc = 0.00001;\r\n\tng = (ngain < nc) ? nc : (ngain * 0.05);\r\n\treturn ng * gRng(gain);\r\n}\r\n\r\n// cubic non-linearity (thb)\r\ndnl(x)\r\n{\r\n\tn\t= 0.55032120814910446;\r\n\tx\t= clip(x, -1, 1);\r\n\tnx\t= n * x;\t\t\t\t// transfer function * clamped input\r\n\treturn\tx - 2 * nx * nx * nx;\r\n}\r\n/*\r\n// fixed 4x cheap oversampling, plus voodoo for GenExpr\ndnl4x(XIN)\n{\n\tHistory\tumTm1_0(0), umT0_0(0), umT1_0(0);\n\n\tHistory\tdmT2_1(0), dmT1_1(0), dmT0_1(0);\n\tHistory\tdmT2_2(0), dmT1_2(0), dmT0_2(0);\n\tHistory\tdmT2_3(0), dmT1_3(0), dmT0_3(0);\n\n\tHistory\tdoX0(0);\n\n\tx0_0_a\t= XIN + 0;\n\tx1_0\t= interp(0.25,\tumTm1_0, umT0_0, umT1_0, x0_0_a, mode=\"spline\");\n\tx3_0\t= interp(0.75,\tumTm1_0, umT0_0, umT1_0, x0_0_a, mode=\"spline\");\n\tx2_0\t= interp(0.5,\tumTm1_0, umT0_0, umT1_0, x0_0_a, mode=\"spline\");\n\n\t// process 4x\n\ty1_0\t= dnl(x1_0);\n\ty2_0\t= dnl(x2_0);\n\ty3_0\t= dnl(x3_0);\n\ty4_0\t= dnl(umT1_0);\n\n\ty4_0_a\t= y4_0 + 0;\n\ty4_1\t= interp(0.75,\ty4_0_a,\tdmT0_3, dmT1_3, dmT2_3, mode=\"spline\");\n\n\ty3_0_a\t= y3_0 + 0;\n\ty3_1\t= interp(0.5,\ty3_0_a,\tdmT0_2, dmT1_2, dmT2_2, mode=\"spline\");\n\n\ty2_0_a\t= y2_0 + 0;\n\ty2_1\t= interp(0.25,\ty2_0_a,\tdmT0_1, dmT1_1, dmT2_1, mode=\"spline\");\n\n\ty0_0\t= (((doX0 + y2_1) + y3_1) + y4_1) * 0.25;\n\n\tumTm1_0\t= umT0_0;\n\tumT0_0\t= umT1_0;\n\tumT1_0\t= XIN;\n\n\tdmT1_1\t= dmT0_1;\n\tdmT0_1\t= y2_0;\n\tdmT2_1\t= dmT1_1;\n\n\tdmT1_2\t= dmT0_2;\n\tdmT0_2\t= y3_0;\n\tdmT2_2\t= dmT1_2;\n\n\tdmT1_3\t= dmT0_3;\n\tdmT0_3\t= y4_0;\n\tdmT2_3\t= dmT1_3;\n\n\tdoX0\t= y1_0;\n\n\treturn dcblock(y0_0);\n}\n\n// make oversampling choice on nonlinearity\ndnlNonlin(xin, oversampling)\n{\n\tHistory dnldummy(0);\t\t\t// for embedding\n\ty = 0;\n\tif (oversampling > 0) {\t\t\t// use 4x oversampling\n\t\ty = dnl4x(xin);\n\t} else {\t\t\t\t\t\t// use 1x sampling\n\t\ty = dnl(xin);\n\t}\n\treturn y;\n}\r\n*/\r\n// thb filter\r\n\r\n// direct input; lowpass gain; highpass gain; stage 1 coefficient (factor of cutoff & lut);\r\n// stage 2 coefficient (factor of cutoff & lut); resonance corrected (factor of cutoff, resonance & lut);\r\n// noise injection (gaussian distribution); level of noise in filter (0..n);\r\ndft(x, l, h, a, b, r, sng, n)\r\n{\r\n\r\n\tHistory za(0), zb(0), zr(0), zh(0);\r\n\tHistory zy(0);\t\t\t\t\t\t\t\t\t\t// output\r\n\r\n\tPOST_GAIN = 1.425;\t// (1 - 0.05) * 3 / 2\r\n\tHEADROOM = (1 - (n * 0.05)) * 0.998849;\r\n\r\n\t// filter\r\n\tza = x * l + r * (zy - zr) + a * za + sng;\t\t\t// stage 1\r\n\tzb = za * (1 - b) + (x - zh) * h + b * zb + sng;\t// stage 2\r\n\r\n\t// update\r\n\tzh = x;\r\n\tzr = zy;\r\n\r\n\t// non-linearity\r\n\tzy = dnl(zb);\r\n\r\n\t// output\r\n\tzy = zy * HEADROOM;\r\n\tzy = dcblock(zy + sng);\t\t\t\t\t\t\t\t// final noise injection\r\n\r\n\treturn zy * POST_GAIN;\r\n\r\n}\r\n\r\n// fixed 4x 'cheap' oversampling, plus voodoo for GenExpr\ndft4x(XIN, l, h, a, b, r, sng, n)\n{\n\tHistory\tumTm1_0(0), umT0_0(0), umT1_0(0);\n\n\tHistory\tdmT2_1(0), dmT1_1(0), dmT0_1(0);\n\tHistory\tdmT2_2(0), dmT1_2(0), dmT0_2(0);\n\tHistory\tdmT2_3(0), dmT1_3(0), dmT0_3(0);\n\n\tHistory\tdoX0(0);\n\n\tx0_0_a\t= XIN + 0;\n\tx1_0\t= interp(0.25,\tumTm1_0, umT0_0, umT1_0, x0_0_a, mode=\"spline\");\n\tx3_0\t= interp(0.75,\tumTm1_0, umT0_0, umT1_0, x0_0_a, mode=\"spline\");\n\tx2_0\t= interp(0.5,\tumTm1_0, umT0_0, umT1_0, x0_0_a, mode=\"spline\");\n\n\t// process 4x\n\ty1_0\t= dft(x1_0,\t\tl, h, a, b, r, sng, n);\n\ty2_0\t= dft(x2_0,\t\tl, h, a, b, r, sng, n);\n\ty3_0\t= dft(x3_0,\t\tl, h, a, b, r, sng, n);\n\ty4_0\t= dft(umT1_0,\tl, h, a, b, r, sng, n);\n\n\ty4_0_a\t= y4_0 + 0;\n\ty4_1\t= interp(0.75,\ty4_0_a,\tdmT0_3, dmT1_3, dmT2_3, mode=\"spline\");\n\n\ty3_0_a\t= y3_0 + 0;\n\ty3_1\t= interp(0.5,\ty3_0_a,\tdmT0_2, dmT1_2, dmT2_2, mode=\"spline\");\n\n\ty2_0_a\t= y2_0 + 0;\n\ty2_1\t= interp(0.25,\ty2_0_a,\tdmT0_1, dmT1_1, dmT2_1, mode=\"spline\");\n\n\ty0_0\t= (((doX0 + y2_1) + y3_1) + y4_1) * 0.25;\n\n\tumTm1_0\t= umT0_0;\n\tumT0_0\t= umT1_0;\n\tumT1_0\t= XIN;\n\n\tdmT1_1\t= dmT0_1;\n\tdmT0_1\t= y2_0;\n\tdmT2_1\t= dmT1_1;\n\n\tdmT1_2\t= dmT0_2;\n\tdmT0_2\t= y3_0;\n\tdmT2_2\t= dmT1_2;\n\n\tdmT1_3\t= dmT0_3;\n\tdmT0_3\t= y4_0;\n\tdmT2_3\t= dmT1_3;\n\n\tdoX0\t= y1_0;\n\n\treturn dcblock(y0_0);\n}\r\n\r\n// make oversampling choice on entire filter\r\ndfts(x, l, h, a, b, r, sng, n, os)\r\n{\r\n\tHistory dftsdummy(0);\t\t\t// for embedding\n\ty = 0;\n\tif (os > 0) {\t\t\t\t\t// use 4x oversampling\n\t\ty = dft4x(x, l, h, a, b, r, sng, n);\n\t} else {\t\t\t\t\t\t// use 1x sampling\n\t\ty = dft(x, l, h, a, b, r, sng, n);\n\t}\n\treturn y;\n}\r\n\r\n// // // declare\r\n\r\nBuffer\tdfm; \t\t\t\t\t\t\t\t// alias to LUT[] (32-bit truncated values)\r\n\r\nParam\tfilter(1, min=0, max=2);\t\t\t// 0 == bypass, 1 == 12dB lowpass (default), 2 == 6dB highpass\r\nParam\tprocessing(0, min=0, max=4);\t\t// mono, mono/dual-mono, mono-sum/mono, mono-sum/dual-mono, true-stereo\r\nParam\tbase(0, min=-100, max=100);\t\t\t// cutoff (mtofApprox()) tuning in cents around A == 440 Hz\r\nParam\tcutoffsmooth(40, min=0, max=1000);\t// cutoff 'glide' time in milliseconds, 0 == (cpu)off\r\nParam\tgain(3, min=-6, max=14);\t\t\t// input gain in dB, thb range\r\nParam\tnoise(0.25, min=0, max=1);\t\t\t// amplitude level of noise in filter, 0..1 remapped in code 0..0.1\r\nParam\toversampling(0, min=0, max=1);\t\t// flag for filter, 0 == at sample rate, 1 == 4x oversampling\r\n\r\n// // // setup\r\n\r\nos\t\t= int(oversampling);\r\nproc\t= int(processing);\r\nfilt\t= int(filter);\r\nnoisey\t= (noise * noise * noise) * 0.1;\t// default 0.25 = amplitude 0.001563\r\n\r\nxL\t\t=\t\t\tin1;\t\t// direct inputs\r\nxR\t\t=\t\t\tin2;\r\ncutoff\t=\t\t\tin3;\t\t// in MIDI Pitch\t// !! N.B. - no clipping on input !!\r\nres\t\t= maximum(\tin4, 0);\t// 0..1++\t\t\t// !! N.B. - no high clip !!\r\n\r\nifilt, input, tuning = 0;\r\nif (os > 0) {\t\t\t\t\t// cut corners for oversampling mode\r\n\tifilt\t= maximum(filt, 1) - 1;\t\t\t\t\t\t\t\t\t\t\t\t\t// switch 0/1\r\n\tinput\t= dbtoaApproxC(gain);\t\t\t\t\t\t\t\t\t\t\t\t\t// cheap\r\n\ttuning\t= 440 * fastexp(0.057762265 * (((base + 3450) / 50) - 69)) + 12.606964;\t// cheap & param rate\n} else {\r\n\tifilt\t= lineCurve((maximum(filt, 1) - 1), mstosamps(235), 1);\t\t\t\t\t// interpolated 0..1\r\n\tinput\t= dbtoaApproxA(gain);\t\t\t\t\t\t\t\t\t\t\t\t\t// accurate\r\n\ttuning\t= 440 * expA(0.057762265 * (((base + 3450) / 50) - 69)) + 0.056317;\t\t// accurate & param rate\r\n}\r\n// 'tuning': + offset = accurate for bipolar tuning ctrl around 440 Hz, -100..100 cents input\r\n// (this is dumb, we should just find a polynomial that approximates for input range for 'tuning')\r\nfrequency\t= mtofApproxA(cutoff, tuning);\r\n\r\n// // // get coefficients via LUT lookup\r\n\r\n// maximum filter self-oscillation frequency == MAX_OSC_FREQ * samplerate;\nMAX_OSC_FREQ\t= 0.1640625;\r\nOCTAVES\t\t\t= 16;\r\nSTEPS\t\t\t= 32;\r\nMIN_LUT_FREQ\t= 0.00000762939453;\t\t// 1 / 131072\r\nMAX_LUT_FREQ\t= 0.5 - 1 / (STEPS * 4) - 0.001;\r\nPG\t\t\t\t= 0.70175438596491;\t\t// 1 / (1 - 0.05) * 3 / 2\r\n\r\nfreq\t\t\t= clip((frequency / samplerate), MIN_LUT_FREQ, MAX_LUT_FREQ);\t\t// (f/fs)\r\nif (cutoffsmooth > 0) {\r\n\tcfs\t\t\t= cutoffsmooth * 0.001;\t// ms to secs\r\n\tfreq\t\t= logsmooth(freq, cfs);\r\n}\n\r\n// find octave\r\noct = 0;\r\noctBaseFreq = MIN_LUT_FREQ;\r\nnextOctBaseFreq = MIN_LUT_FREQ * 2;\r\n\r\nwhile (oct < OCTAVES) {\r\n\tif (freq < nextOctBaseFreq)\r\n\t\tbreak;\r\n\toctBaseFreq = nextOctBaseFreq;\r\n\tnextOctBaseFreq *= 2;\r\n\toct += 1;\r\n}\n\r\n// find step, contains int and fract\r\n// octFreqSpan = octBaseFreq;\t// (thb deliberately pedantic)\r\nstp = STEPS * (freq - octBaseFreq) / octBaseFreq;\t// STEPS * (freq - octBaseFreq) / octFreqSpan;\r\n\r\n// base index & interpolation\r\nindex = trunc(stp);\r\n//fraction = stp - index;\t\t// we don't need this in our screwy gen~ version\r\n\r\n// index to LUT\r\naddress = trunc(3 * (index + oct * STEPS));\r\n\r\n// look up\r\nxa = peek(dfm,  address, \t\tboundmode=\"clamp\", interp=\"linear\"); // linear over our truncated values\r\nxb = peek(dfm, (address + 1), \tboundmode=\"clamp\", interp=\"linear\"); // ...\r\nxr = peek(dfm, (address + 2), \tboundmode=\"clamp\", interp=\"linear\"); // ...\r\n\r\n// multiply by 2 to bring lut entries back up to range (custom buffer~ table is divided by 2 for storage)\r\na\t= xa * 2;\t\t// coef0\r\nb\t= xb * 2;\t\t// coef1\r\nr0\t= xr * 2;\t\t// coef2\n\r\n// // // make parameters etc\r\npgain\t\t= (input * PG) * 0.501187;\t\t\t// (input * (1 / (1 - 0.05) * 3 / 2)) * -6dB\r\nlgain\t\t= (pgain * (1 - ifilt)) * (1 - a);\t// LP gain conflated with 1st stage integrator gain\r\nhgain\t\t=  pgain * ifilt;\r\nl, h, r, n\t= expsmoothBank4(lgain, hgain, (r0 * res), noisey, 0.022666);\r\n\r\n// // // do filtering (depending on 'processing')\r\n\r\nyL, yR = xL, xR;\r\nif (filt > 0) {\t\t\t\t\t// true cpu bypass if filter == 0\r\n\r\n\tif\t\t\t(proc == 1) {\t// mono in, dual mono out\r\n\t\tgn0 = guassnoise(1, n);\r\n\t\tyL = dfts(xL, l, h, a, b, r, gn0, n, os);\r\n\t\tyR = yL;\r\n\t} else if\t(proc == 2) {\t// summed mono in, mono out\r\n\t\tgn0 = guassnoise(0.998849, n);\r\n\t\tyL = dfts(((xL + xR) * 0.5), l, h, a, b, r, gn0, n, os);\r\n\t\tyR = 0;\r\n\t} else if\t(proc == 3) {\t// summed mono in, dual mono out\r\n\t\tgn0 = guassnoise(0.998849, n);\r\n\t\tyL = dfts(((xL + xR) * sqrt1_2), l, h, a, b, r, gn0, n, os);\r\n\t\tyR = yL;\r\n\t} else if\t(proc == 4) {\t// true stereo input & output\r\n\t\tgn1 = guassnoise(sqrt1_2,\tn);\r\n\t\tgn2 = guassnoise(PG,\t\tn);\r\n\t\tyL = dfts(xL, l, h, a, b, r, gn1, n, os);\r\n\t\tyR = dfts(xR, l, h, a, b, r, gn2, n, os);\r\n\t} else {//\t(proc == 0)\t\t// mono in, mono out, default\r\n\t\tgn0 = guassnoise(1, n);\r\n\t\tyL = dfts(xL, l, h, a, b, r, gn0, n, os);\r\n\t\tyR = 0;\r\n\t}\r\n\r\n}\r\n\r\n// // // outputs\r\n\r\nout1, out2 = yL, yR;\r\n\r\n// // // license\r\n\r\n/* -------------------------------------------------------------------------------\n * DFM-1 Digital Filter Module\n * Copyright (C) 2010, 2011, 2013\n *\n * Tony Hardie-Bick <tony@entitysynth.net> - Java version (original)\n * Jonny Stutters <jstutters@jeremah.co.uk> - SuperCollider port\r\n * Pete Dowling <hello@steadykammer.net> - Gen port\n *\n * This program is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 2 of the License, or\n * (at your option) any later version.\n *\n * This program is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with this program. If not, see <http://www.gnu.org/licenses/>.\n * ------------------------------------------------------------------------------ */\n",
+					"fontface" : 0,
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-1",
+					"maxclass" : "codebox",
+					"numinlets" : 4,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 32.0, 148.0, 798.0, 414.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 715.0, 28.5, 115.0, 62.0 ],
+					"style" : "",
+					"text" : "N.B. - THIS WILL NOT WORK IN GEN~ ALONE - REQUIRES FILTER LUT BUFFER~ EXTERNALLY",
+					"textjustification" : 2
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-9",
+					"linecount" : 7,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 32.0, 17.0, 642.333313, 85.0 ],
+					"style" : "",
+					"text" : "Param\tfilter(1, min=0, max=2);\t\t\t// 0 == bypass, 1 == 12dB lowpass (default), 2 == 6dB highpass\nParam\tprocessing(0, min=0, max=4);\t\t// mono, mono/dual-mono, mono-sum/mono, mono-sum/dual-mono, true-stereo\nParam\tbase(0, min=-100, max=100);\t\t\t// cutoff (mtofApprox()) tuning in cents around A == 440 Hz\nParam\tcutoffsmooth(40, min=0, max=1000);\t// cutoff 'glide' time in milliseconds, 0 == (cpu)off\nParam\tgain(3, min=-6, max=14);\t\t\t// input gain in dB, thb range\nParam\tnoise(0.25, min=0, max=1);\t\t\t// amplitude level of noise in filter, 0..1 remapped in code 0..0.1\nParam\toversampling(0, min=0, max=1);\t\t// flag for filter, 0 == at sample rate, 1 == 4x oversampling"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 41.5, 569.0, 41.5, 569.0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 820.5, 569.0, 731.5, 569.0 ],
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 41.5, 141.0, 41.5, 141.0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 301.166656, 141.0, 301.166656, 141.0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 560.833313, 141.0, 560.833313, 141.0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 3 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 724.5, 141.0, 820.5, 141.0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+ ]
+	}
+
+}

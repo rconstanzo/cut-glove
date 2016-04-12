@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 2,
+			"minor" : 1,
+			"revision" : 0,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
@@ -117,7 +117,7 @@
 					"patching_rect" : [ 441.5, 317.60083, 59.5, 22.0 ],
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u776015172"
+					"varname" : "u085014020"
 				}
 
 			}
@@ -301,7 +301,7 @@
 					"fontname" : "Helvetica",
 					"hint" : "Select FX module",
 					"id" : "obj-1",
-					"items" : [ "chopper", ",", "cloud", ",", "dirt", ",", "lofi", ",", "pitch", ",", "reverb", ",", "shuffler", ",", "stutter" ],
+					"items" : [ "chopper", ",", "cloud", ",", "dirt", ",", "filter", ",", "lofi", ",", "pitch", ",", "reverb", ",", "shuffler", ",", "stutter" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -345,7 +345,7 @@
 , 			{
 				"box" : 				{
 					"coll_data" : 					{
-						"count" : 9,
+						"count" : 10,
 						"data" : [ 							{
 								"key" : "stutter",
 								"value" : [ "fx_mod_stutter.maxpat" ]
@@ -361,6 +361,10 @@
 , 							{
 								"key" : "dirt",
 								"value" : [ "fx_mod_dirt.maxpat" ]
+							}
+, 							{
+								"key" : "filter",
+								"value" : [ "fx_mod_filter.maxpat" ]
 							}
 , 							{
 								"key" : "chopper",
@@ -619,72 +623,64 @@
 		"parameters" : 		{
 			"obj-48::obj-19::obj-50" : [ "stutteroverdub", "live.text", 0 ],
 			"obj-48::obj-19::obj-51" : [ "stutterrand", "live.text", 0 ],
+			"obj-48::obj-19::obj-45" : [ "stutter", "live.text", 0 ],
 			"obj-48::obj-19::obj-5" : [ "stutterdd", "live.text", 0 ],
 			"obj-48::obj-19::obj-6" : [ "stutterrate", "live.numbox", 0 ],
 			"obj-48::obj-19::obj-14" : [ "stutterdensity", "live.numbox", 0 ],
 			"obj-48::obj-19::obj-49" : [ "stutterrec", "live.text", 0 ],
-			"obj-48::obj-19::obj-45" : [ "stutter", "live.text", 0 ],
 			"obj-48::obj-19::obj-2" : [ "stutterkill", "live.text", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "fx_mod_stutter.maxpat",
 				"bootpath" : "~/Dropbox/Patches/Cut Glove",
-				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mode.maxpat",
 				"bootpath" : "~/Dropbox/Patches/Cut Glove",
-				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "morph.maxpat",
 				"bootpath" : "~/Dropbox/Patches/Cut Glove",
-				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fx_stutter.maxpat",
 				"bootpath" : "~/Dropbox/Patches/Cut Glove",
-				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "duck.maxpat",
 				"bootpath" : "~/Dropbox/Patches/Cut Glove",
-				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "process_freeze~.maxpat",
 				"bootpath" : "~/Dropbox/Patches/Cut Glove",
-				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "process_freeze.pfft.maxpat",
 				"bootpath" : "~/Dropbox/Patches/Cut Glove",
-				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "CProcess_Speed.maxpat",
 				"bootpath" : "~/Dropbox/Patches/Cut Glove",
-				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
-		"embedsnapshot" : 0,
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -770,8 +766,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

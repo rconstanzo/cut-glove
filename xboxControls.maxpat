@@ -3,7 +3,7 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
+			"minor" : 2,
 			"revision" : 2,
 			"architecture" : "x86",
 			"modernui" : 1
@@ -75,7 +75,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
+							"minor" : 2,
 							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -186,7 +186,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
+											"minor" : 2,
 											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
@@ -341,7 +341,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 7,
-															"minor" : 0,
+															"minor" : 2,
 															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
@@ -668,8 +668,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -687,8 +687,8 @@
 , 															{
 																"name" : "rsliderGold",
 																"default" : 																{
-																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -724,7 +724,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 7,
-															"minor" : 0,
+															"minor" : 2,
 															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
@@ -1100,7 +1100,7 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 7,
-																			"minor" : 0,
+																			"minor" : 2,
 																			"revision" : 2,
 																			"architecture" : "x86",
 																			"modernui" : 1
@@ -1386,8 +1386,8 @@
 , 																			{
 																				"name" : "newobjYellow-1",
 																				"default" : 																				{
-																					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																					"fontsize" : [ 12.059008 ]
+																					"fontsize" : [ 12.059008 ],
+																					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -1405,8 +1405,8 @@
 , 																			{
 																				"name" : "rsliderGold",
 																				"default" : 																				{
-																					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-																					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+																					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+																					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -1442,7 +1442,7 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 7,
-																			"minor" : 0,
+																			"minor" : 2,
 																			"revision" : 2,
 																			"architecture" : "x86",
 																			"modernui" : 1
@@ -1728,8 +1728,8 @@
 , 																			{
 																				"name" : "newobjYellow-1",
 																				"default" : 																				{
-																					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																					"fontsize" : [ 12.059008 ]
+																					"fontsize" : [ 12.059008 ],
+																					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -1747,8 +1747,8 @@
 , 																			{
 																				"name" : "rsliderGold",
 																				"default" : 																				{
-																					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-																					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+																					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+																					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 																				}
 ,
 																				"parentstyle" : "",
@@ -2108,8 +2108,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -2127,8 +2127,8 @@
 , 															{
 																"name" : "rsliderGold",
 																"default" : 																{
-																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -2191,7 +2191,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 7,
-															"minor" : 0,
+															"minor" : 2,
 															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
@@ -2441,8 +2441,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -2460,8 +2460,8 @@
 , 															{
 																"name" : "rsliderGold",
 																"default" : 																{
-																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -2851,7 +2851,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 7,
-															"minor" : 0,
+															"minor" : 2,
 															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
@@ -3058,8 +3058,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -3077,8 +3077,8 @@
 , 															{
 																"name" : "rsliderGold",
 																"default" : 																{
-																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -3703,8 +3703,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -3722,8 +3722,8 @@
 , 											{
 												"name" : "rsliderGold",
 												"default" : 												{
-													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -3757,13 +3757,13 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
+											"minor" : 2,
 											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 901.0, 54.0, 736.0, 901.0 ],
+										"rect" : [ 901.0, 79.0, 736.0, 901.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -4119,7 +4119,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 7,
-															"minor" : 0,
+															"minor" : 2,
 															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
@@ -4373,8 +4373,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -4392,8 +4392,8 @@
 , 															{
 																"name" : "rsliderGold",
 																"default" : 																{
-																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -4535,7 +4535,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 7,
-															"minor" : 0,
+															"minor" : 2,
 															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
@@ -4862,8 +4862,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -4881,8 +4881,8 @@
 , 															{
 																"name" : "rsliderGold",
 																"default" : 																{
-																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -4931,7 +4931,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 7,
-															"minor" : 0,
+															"minor" : 2,
 															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
@@ -5138,8 +5138,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -5157,8 +5157,8 @@
 , 															{
 																"name" : "rsliderGold",
 																"default" : 																{
-																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -5207,7 +5207,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 7,
-															"minor" : 0,
+															"minor" : 2,
 															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
@@ -5457,8 +5457,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -5476,8 +5476,8 @@
 , 															{
 																"name" : "rsliderGold",
 																"default" : 																{
-																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -6213,8 +6213,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -6232,8 +6232,8 @@
 , 											{
 												"name" : "rsliderGold",
 												"default" : 												{
-													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -6432,8 +6432,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6451,8 +6451,8 @@
 , 							{
 								"name" : "rsliderGold",
 								"default" : 								{
-									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -6500,7 +6500,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
+							"minor" : 2,
 							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -6586,7 +6586,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
+											"minor" : 2,
 											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
@@ -6619,6 +6619,7 @@
 										"tags" : "",
 										"style" : "",
 										"subpatcher_template" : "",
+										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"id" : "obj-3",
@@ -6932,7 +6933,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 7,
-															"minor" : 0,
+															"minor" : 2,
 															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
@@ -7497,8 +7498,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -7516,8 +7517,8 @@
 , 															{
 																"name" : "rsliderGold",
 																"default" : 																{
-																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -7951,8 +7952,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -7970,8 +7971,8 @@
 , 											{
 												"name" : "rsliderGold",
 												"default" : 												{
-													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -8031,7 +8032,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
+											"minor" : 2,
 											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
@@ -8270,7 +8271,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 7,
-															"minor" : 0,
+															"minor" : 2,
 															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
@@ -8565,8 +8566,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -8584,8 +8585,8 @@
 , 															{
 																"name" : "rsliderGold",
 																"default" : 																{
-																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -8711,7 +8712,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 7,
-															"minor" : 0,
+															"minor" : 2,
 															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
@@ -9102,7 +9103,7 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 7,
-															"minor" : 0,
+															"minor" : 2,
 															"revision" : 2,
 															"architecture" : "x86",
 															"modernui" : 1
@@ -9450,8 +9451,8 @@
 , 															{
 																"name" : "newobjYellow-1",
 																"default" : 																{
-																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-																	"fontsize" : [ 12.059008 ]
+																	"fontsize" : [ 12.059008 ],
+																	"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -9469,8 +9470,8 @@
 , 															{
 																"name" : "rsliderGold",
 																"default" : 																{
-																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+																	"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+																	"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 																}
 ,
 																"parentstyle" : "",
@@ -10281,8 +10282,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -10300,8 +10301,8 @@
 , 											{
 												"name" : "rsliderGold",
 												"default" : 												{
-													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -10349,7 +10350,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
+											"minor" : 2,
 											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
@@ -10886,8 +10887,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -10905,8 +10906,8 @@
 , 											{
 												"name" : "rsliderGold",
 												"default" : 												{
-													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -11042,7 +11043,7 @@
 									"numoutlets" : 0,
 									"patching_rect" : [ 615.0, 27.0, 362.0, 328.0 ],
 									"style" : "",
-									"text" : "from any given state:\n\nstopped state (nothing pressed):\nleft press - \"record\" ----> initial record state\nleft half-press - \"append, record\" ----> record state\nright press - \"play\" (not first time) ----> play state\nright half-press - \"play\" (machien gun) ---> play state\nleft release - nothing (only from overdub state)\n\nplay state (right pressed):\nleft press - \"record\" ----> overdub state\nleft half-press - \"overdub 0.\" ----> overdub state (replace)\nleft release - \"record\" (again) ----> play state\nright half-press - \"play\" (machien gun) ---> play state\nright release - \"stop\" ----> stop state\n\ninitial record state (left pressed):\nleft release - \"stop\" ----> stop state\nright press - \"record\" ----> (end recording then) overdub state\n\noverdub state (both pressed):\nleft release - \"record\" ----> play state\nright half-press - \"play, record\" (machien gun) ---> overdub state\nright release - \"stop\" ----> stop state"
+									"text" : "from any given state:\n\nstopped state (nothing pressed):\nleft press - \"record\" ----> initial record state\nleft half-press - \"append, record\" ----> record state\nright press - \"play\" (not first time) ----> play state\nright half-press - \"play\" (machien gun) ---> play state\nleft release - nothing (only from overdub state)\n\nplay state (right pressed):\nleft press - \"record\" ----> overdub state\nleft half-press - \"overdub 0.\" ----> overdub state (replace)\nleft release - \"record\" (again) ----> play state\nright half-press - \"play\" (machien gun) ---> play state\nright release - \"stop\" ----> stop state\n\ninitial record state (left pressed):\nleft release - \"stop\" ----> stop state\nright press - \"record\" ----> (end recording then) overdub state\n\noverdub state (both pressed):\nleft release - \"record\" ----> play state\nright half-press - \"play, record\" (machine gun) ---> overdub state\nright release - \"stop\" ----> stop state"
 								}
 
 							}
@@ -11741,8 +11742,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -11760,8 +11761,8 @@
 , 							{
 								"name" : "rsliderGold",
 								"default" : 								{
-									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -11797,7 +11798,7 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
+							"minor" : 2,
 							"revision" : 2,
 							"architecture" : "x86",
 							"modernui" : 1
@@ -12081,7 +12082,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
+											"minor" : 2,
 											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
@@ -12596,8 +12597,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -12615,8 +12616,8 @@
 , 											{
 												"name" : "rsliderGold",
 												"default" : 												{
-													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -12961,7 +12962,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
+											"minor" : 2,
 											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
@@ -13476,8 +13477,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -13495,8 +13496,8 @@
 , 											{
 												"name" : "rsliderGold",
 												"default" : 												{
-													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -13584,7 +13585,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
+											"minor" : 2,
 											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
@@ -13828,8 +13829,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -13847,8 +13848,8 @@
 , 											{
 												"name" : "rsliderGold",
 												"default" : 												{
-													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -13994,7 +13995,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
+											"minor" : 2,
 											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
@@ -14238,8 +14239,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -14257,8 +14258,8 @@
 , 											{
 												"name" : "rsliderGold",
 												"default" : 												{
-													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -14320,7 +14321,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
+											"minor" : 2,
 											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
@@ -14527,8 +14528,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -14546,8 +14547,8 @@
 , 											{
 												"name" : "rsliderGold",
 												"default" : 												{
-													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -14658,7 +14659,7 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
+											"minor" : 2,
 											"revision" : 2,
 											"architecture" : "x86",
 											"modernui" : 1
@@ -14865,8 +14866,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-													"fontsize" : [ 12.059008 ]
+													"fontsize" : [ 12.059008 ],
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -14884,8 +14885,8 @@
 , 											{
 												"name" : "rsliderGold",
 												"default" : 												{
-													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+													"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+													"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 												}
 ,
 												"parentstyle" : "",
@@ -15822,8 +15823,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-									"fontsize" : [ 12.059008 ]
+									"fontsize" : [ 12.059008 ],
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -15841,8 +15842,8 @@
 , 							{
 								"name" : "rsliderGold",
 								"default" : 								{
-									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+									"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+									"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 								}
 ,
 								"parentstyle" : "",
@@ -15937,6 +15938,50 @@
 
 			}
  ],
+		"dependency_cache" : [ 			{
+				"name" : "CProcess_Circ2Square.maxpat",
+				"bootpath" : "~/Sync/Patches/Cut Glove",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CProcess_Takeover.maxpat",
+				"bootpath" : "~/Sync/Patches/Cut Glove",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CProcess_Polar.maxpat",
+				"bootpath" : "~/Sync/Patches/Cut Glove",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zoom.maxpat",
+				"bootpath" : "~/Sync/Patches/Cut Glove",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "pressHold.maxpat",
+				"bootpath" : "~/Sync/Patches/Cut Glove",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "CProcess_Speed.maxpat",
+				"bootpath" : "~/Sync/Patches/Cut Glove",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "means.maxpat",
+				"bootpath" : "~/Sync/Patches/Cut Glove",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
@@ -16003,8 +16048,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
-					"fontsize" : [ 12.059008 ]
+					"fontsize" : [ 12.059008 ],
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
@@ -16022,8 +16067,8 @@
 , 			{
 				"name" : "rsliderGold",
 				"default" : 				{
-					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ],
-					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ]
+					"bgcolor" : [ 0.764706, 0.592157, 0.101961, 1.0 ],
+					"color" : [ 0.646639, 0.821777, 0.854593, 1.0 ]
 				}
 ,
 				"parentstyle" : "",

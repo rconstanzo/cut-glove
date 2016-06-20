@@ -1,0 +1,215 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 7,
+			"minor" : 0,
+			"revision" : 6,
+			"architecture" : "x86",
+			"modernui" : 1
+		}
+,
+		"rect" : [ 361.0, 86.0, 721.0, 675.0 ],
+		"bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
+		"editing_bgcolor" : [ 0.9, 0.9, 0.9, 1.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 10.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial Bold",
+		"gridonopen" : 2,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
+		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 325.0, 16.0, 163.0, 20.0 ],
+					"style" : "",
+					"text" : "in 3 @comment freq modulation"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 152.0, 16.0, 168.0, 20.0 ],
+					"style" : "",
+					"text" : "in 2 @comment pitch modulation"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 32.0, 632.0, 280.0, 20.0 ],
+					"style" : "",
+					"text" : "out 1 @comment optionally smoothed and scaled cf (Hz)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-5",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 550.0, 16.0, 138.0, 20.0 ],
+					"style" : "",
+					"text" : "in 4 @comment resonance"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"code" : "\r\n//\t//\t//\tlocal functions\r\n\r\nexpA(x0)\t\t\t\t\t\t\t\t\t// approx exp(x) (more accurate than 'fastexp()')\r\n{\n\tx = 0.999996 + (0.031261316 + (0.00048274797 + 0.000006 * x0) * x0) * x0;\n\tx *= x; x *= x; x *= x; x *= x; x *= x;\n\treturn x;\n}\n\ntauA(t)\t\t\t\t\t\t\t\t\t\t// approximate 'exp(-1 / (t * samplerate))'\r\n{\n\ty = expA(-1 / (t * samplerate));\n\treturn y + 0.000128;\t\t\t\t\t// approximation has excellent accuracy above...\n}\t\t\t\t\t\t\t\t\t\t\t// ...0.01 seconds (10 milliseconds) input\n\r\n// more 'exact' than 'logsmooth()'\r\nexpsmooth(x, t)\t\t\t\t\t\t\t\t// t is smooth time in seconds\r\n{\n\tHistory w(0);\n\tz = tauA(t);\n\ty = (z * w) + (x * (1 - z));\n\tw = y;\n\treturn y;\n}\r\n\r\nlogsmooth(x, s)\t\t\t\t\t\t\t\t// s = time to drop 6dB (in seconds)\r\n{\n\tHistory z(0);\n//\tad = 0.693147 / maximum((s * samplerate), 1);// maximum check not required here\n\tad = 0.693147 / (s * samplerate);\n\ty = ((x - z) * ad) + z;\n\tz = y;\n\treturn y;\n}\r\n\r\n// cheaper than library 'mtof()'\nmtofApprox(pitch)\t\t\t\t\t\t\t// using 'expA()' for approx with good accuracy\r\n{\r\n\tmtofA = 440 * expA(0.057762265 * (pitch - 69));\n\treturn mtofA + 0.120906;\t\t\t\t// + offset = accurate (exact) for input 48..69\n}\n\r\n//\t//\t//\tdeclare\r\n\r\n// choose cutoff input in Hz (0) or pitch (1, default)\r\nParam\tcutoffmode(1, min=0, max=1);\r\n// cutoff & resonance smooth times in ms; if == 0 then no cpu used\r\n// for smoothing and inputs can be signal rate modulators (e.g. lfos)\r\nParam\tcutoffsmooth(0, min=0, max=1000);\t\t// default off\r\nParam\tresonancesmooth(20, min=0, max=1000);\t// default 10 ms\r\n\r\n//\t//\t//\tinputs\r\n\r\ncfm\t\t\t= int(cutoffmode);\r\n\r\ncutoff\t\t= in1;\r\npitchmod\t= in2;\r\nfreqmod\t\t= in3;\r\nresonance\t= in4;\r\n\r\n//\t//\t//\toptional cutoff smoothing (turn off for direct modulated input)\r\n\r\nif (cutoffsmooth > 0) {\r\n\r\n\tcs\t\t= cutoffsmooth * 0.001;\t\t\t// ..secs\r\n\tcutoff\t= logsmooth(cutoff, cs);\r\n\r\n//\t//\t//\tand scale pitch cutoff\r\n\r\n\tif (cfm > 0) {\t\t\t\t\t\t\t// if midi pitch input chosen for 'cutoff'\r\n\t\tcutoff\t= cutoff + pitchmod;\r\n\t\tcutoff\t= mtofApprox(cutoff);\t\t// always signal rate\r\n\t}\r\n\r\n} else {\r\n\r\n//\t//\t//\tjust scale pitch cutoff\r\n\r\n\tif (cfm > 0) {\t\t\t\t\t\t\t// if midi pitch input chosen for 'cutoff'\r\n\t\tcutoff\t= cutoff + pitchmod;\r\n\t\tcutoff\t= mtofApprox(cutoff);\t\t// potentially param rate\r\n\t}\r\n\r\n}\r\n\r\n//\t//\t//\tand scale freq cutoff\r\n\r\ncutoff\t\t= cutoff + freqmod;\t\t\t\t// signal or param rate\r\ncf\t\t\t= clip(cutoff, 5, (samplerate / 2.25));\t// clip at hz level\r\n\r\n//\t//\t//\tscale resonance\r\n\r\nK\t\t\t= clip(resonance, 0, 1) * 2;\t// K = res * 2\r\n\r\n//\t//\t//\toptional resonance smoothing (turn off for modulated input)\r\n\r\nif (resonancesmooth > 0) {\r\n\trs\t\t= resonancesmooth * 0.001;\t\t// ...secs\r\n\tK\t\t= expsmooth(K, rs);\r\n}\r\n\r\n//\t//\t//\toutput scaled and optionally smoothed controls for ladder core\r\n\r\nout1\t= cf;\r\nout2\t= K;\r\n",
+					"fontface" : 0,
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-3",
+					"maxclass" : "codebox",
+					"numinlets" : 4,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 32.0, 53.0, 656.0, 562.0 ],
+					"style" : ""
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 32.0, 16.0, 115.0, 20.0 ],
+					"style" : "",
+					"text" : "in 1 @comment cutoff"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial Bold",
+					"fontsize" : 10.0,
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 405.0, 632.0, 283.0, 20.0 ],
+					"style" : "",
+					"text" : "out 2 @comment optionally smoothed and scaled K (0..2)"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"color" : [ 1.0, 0.5, 0.0, 1.0 ],
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 41.5, 44.0, 41.5, 44.0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.0, 0.0, 1.0, 1.0 ],
+					"destination" : [ "obj-3", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 161.5, 44.0, 253.833328, 44.0 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 1.0, 0.5, 0.0, 1.0 ],
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 678.5, 623.0, 414.5, 623.0 ],
+					"source" : [ "obj-3", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 1.0, 0.5, 0.0, 1.0 ],
+					"destination" : [ "obj-7", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 41.5, 623.0, 41.5, 623.0 ],
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 1.0, 0.5, 0.0, 1.0 ],
+					"destination" : [ "obj-3", 3 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 559.5, 44.0, 678.5, 44.0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"color" : [ 0.0, 0.0, 1.0, 1.0 ],
+					"destination" : [ "obj-3", 2 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 334.5, 44.0, 466.166656, 44.0 ],
+					"source" : [ "obj-6", 0 ]
+				}
+
+			}
+ ]
+	}
+
+}
